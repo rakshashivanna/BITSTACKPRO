@@ -1,0 +1,278 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+Options:	
+Date:		Sun Dec  1 20:51:21 2024
+Host:		ece-rh810-8 (x86_64 w/Linux 5.15.0-126-generic) (20cores*28cpus*Intel(R) Core(TM) i7-14700K 33792KB)
+OS:		CentOS Linux 7 (Core)
+
+License:
+		[20:51:21.179033] Configured Lic search path (21.01-s002): 27432@police.ceas1.uc.edu
+
+		invs	Innovus Implementation System	21.1	Denied
+		invsb	Innovus Implementation System Basic	21.1	Denied
+		fexl	First Encounter XL	21.1	Denied
+		vdixl	Virtuoso Digital Implementation XL	21.1	Denied
+		vdi	Virtuoso Digital Implementation	21.1	checkout succeeded
+		Maximum number of instances allowed (1 x 50000).
+Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> save_global OutputFiles/Run2_v1.globals
+<CMD> set init_gnd_net VSS
+<CMD> set init_lef_file {/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef}
+<CMD> set init_verilog InputFiles/nbit_stack_map.v
+<CMD> set init_mmmc_file InputFiles/recognizer_map.view
+<CMD> set init_top_cell nbit_stack
+<CMD> set init_pwr_net VDD
+<CMD> init_design
+#% Begin Load MMMC data ... (date=12/01 21:10:21, mem=941.7M)
+#% End Load MMMC data ... (date=12/01 21:10:21, total cpu=0:00:00.0, real=0:00:00.0, peak res=942.3M, current mem=942.3M)
+recognizer_rc_corner
+
+Loading LEF file /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/lef/gsclib045_tech.lef ...
+
+Loading LEF file /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/lef/gsclib045_multibitsDFF.lef ...
+**WARN: (IMPLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDD' in macro 'SDFF4RX2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSS' in macro 'SDFF4RX2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDD' in macro 'SDFF4RX1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSS' in macro 'SDFF4RX1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from InputFiles/recognizer_map.view
+Reading recognizer_slowLib timing library '/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+Read 489 cells in library 'slow_vdd1v2' 
+*** End library_loading (cpu=0.00min, real=0.02min, mem=21.5M, fe_cpu=1.59min, fe_real=19.02min, fe_mem=1159.7M) ***
+#% Begin Load netlist data ... (date=12/01 21:10:22, mem=963.3M)
+*** Begin netlist parsing (mem=1159.7M) ***
+Created 489 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist 'InputFiles/nbit_stack_map.v'
+
+*** Memory Usage v#1 (Current mem = 1168.723M, initial mem = 486.375M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=1168.7M) ***
+#% End Load netlist data ... (date=12/01 21:10:22, total cpu=0:00:00.1, real=0:00:00.0, peak res=980.8M, current mem=980.8M)
+Set top cell to nbit_stack.
+Hooked 489 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell nbit_stack ...
+*** Netlist is unique.
+** info: there are 584 modules.
+** info: there are 25793 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1232.137M, initial mem = 486.375M) ***
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Importing multi-corner technology file(s) for preRoute extraction...
+/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch
+Generating auto layer map file.
+Completed (cpu: 0:00:01.8 real: 0:00:02.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: recognizer_view_setup
+    RC-Corner Name        : recognizer_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch'
+ 
+ Analysis View: recognizer_view_hold
+    RC-Corner Name        : recognizer_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch'
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc' ...
+Current (total cpu=0:01:38, real=0:19:03, peak res=1349.4M, current mem=1349.4M)
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 9).
+
+**WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 10).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'recognizer' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 13).
+
+**ERROR: (TCLCMD-917):	Cannot find 'designs' that match 'recognizer' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 13).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'x' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 17).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'x' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 17).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 17).
+
+**ERROR: (TCLNL-312):	set_input_delay: Invalid list of pins: '' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 17).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'y' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 19).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'y' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 19).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern '' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 19).
+
+**ERROR: (TCLNL-312):	set_output_delay: Invalid list of pins: '' (File /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc, Line 19).
+
+INFO (CTE): Reading of timing constraints file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/HW4_shivansa/Innovus/InputFiles/recognizer_map.sdc completed, with 7 Warnings and 5 Errors.
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1368.0M, current mem=1368.0M)
+Current (total cpu=0:01:38, real=0:19:03, peak res=1368.0M, current mem=1368.0M)
+Total number of combinational cells: 318
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of unusable buffers: 24
+List of usable inverters: INVX1
+Total number of usable inverters: 1
+List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of unusable inverters: 18
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58            16  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200            5  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           2  The techSite '%s' has no related standar...
+WARNING   TCLCMD-513           5  The software could not find a matching o...
+ERROR     TCLCMD-917           3  Cannot find '%s' that match '%s'         
+WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+ERROR     TCLNL-312            2  %s: Invalid list of pins: '%s'           
+WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+*** Message Summary: 41 warning(s), 5 error(s)
+
+<CMD> init_design
+**ERROR: **ERROR: (IMPSYT-7329):	Cannot load design with init_design, after design is already in memory.  This command is skipped.
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Dec  1 21:20:11 2024
+  Total CPU time:     0:02:12
+  Total real time:    0:28:51
+  Peak memory (main): 1551.92MB
+
+
+*** Memory Usage v#1 (Current mem = 1941.926M, initial mem = 486.375M) ***
+*** Message Summary: 41 warning(s), 6 error(s)
+
+--- Ending "Innovus" (totcpu=0:02:13, real=0:28:50, mem=1941.9M) ---

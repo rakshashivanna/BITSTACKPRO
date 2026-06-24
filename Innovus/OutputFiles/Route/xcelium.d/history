@@ -1,0 +1,16 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(02Dec2024:16:47:34):( /opt/eda/cadence/XCELIUM2309/tools/xcelium/bin/xrun nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s2::(02Dec2024:16:48:44):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s3::(02Dec2024:16:53:29):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s4::(02Dec2024:17:05:18):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s5::(02Dec2024:17:10:40):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s6::(02Dec2024:18:11:51):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s7::(02Dec2024:18:44:00):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s8::(06Dec2024:04:33:21):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s9::(06Dec2024:04:34:42):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s10::(06Dec2024:13:33:22):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s11::(06Dec2024:13:34:26):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )
+s12::(06Dec2024:14:33:54):( xrun -64bit -access rwc -gui nbit_stack_Routed_netlist.v tb_verilog.v /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v2_basicCells.v )

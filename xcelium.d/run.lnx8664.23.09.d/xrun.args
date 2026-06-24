@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-64bit
+-access
+rwc
+-gui
+verilog.v
+tb_verilog.v

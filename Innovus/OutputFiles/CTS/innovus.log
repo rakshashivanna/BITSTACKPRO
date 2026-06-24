@@ -1,0 +1,39 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+Options:	
+Date:		Sun Dec  1 20:30:32 2024
+Host:		ece-rh810-8 (x86_64 w/Linux 5.15.0-126-generic) (20cores*28cpus*Intel(R) Core(TM) i7-14700K 33792KB)
+OS:		CentOS Linux 7 (Core)
+
+License:
+		[20:30:33.179033] Configured Lic search path (21.01-s002): 27432@police.ceas1.uc.edu
+
+		invs	Innovus Implementation System	21.1	Denied
+		invsb	Innovus Implementation System Basic	21.1	Denied
+		fexl	First Encounter XL	21.1	Denied
+		vdixl	Virtuoso Digital Implementation XL	21.1	Denied
+		vdi	Virtuoso Digital Implementation	21.1	checkout succeeded
+		Maximum number of instances allowed (1 x 50000).
+Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+couldn't read file "../PowerPlanning.tcl": no such file or directory
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Dec  1 20:51:05 2024
+  Total CPU time:     0:01:25
+  Total real time:    0:20:37
+  Peak memory (main): 932.36MB
+
+
+*** Memory Usage v#1 (Current mem = 1117.281M, initial mem = 486.375M) ***
+*** Message Summary: 0 warning(s), 0 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:25, real=0:20:33, mem=1117.3M) ---

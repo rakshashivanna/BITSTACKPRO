@@ -1,0 +1,9 @@
+**WARN: (IMPSP-9005):	The command 'describeCongestion' is obsolete.  To check the congestion, use the 'reportCongestion -hotSpot' command.
+Gcells have been grouped into super gcells for coarser sampling.
+There are 5624 that measure horizontal congestion.
+There are 5513 that measure vertical congestion.
+
+Overflow numH           numV
+-------------------------------------
+
+overall congestion index: H 0 (0.00%), V 0 (0.00%)

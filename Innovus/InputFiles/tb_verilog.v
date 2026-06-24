@@ -1,0 +1,99 @@
+`timescale 1ns / 1ps
+
+module testbench;
+
+    parameter WIDTH = 4;   // Width of the data
+    parameter DEPTH = 850;  // Depth of the stack
+
+    // Signals
+    reg clk, reset, push, pop, test_mode;
+    reg [WIDTH-1:0] data_in, scan_in;
+    wire [WIDTH-1:0] data_out, scan_out;
+    wire full, null;
+
+    // Instantiate the stack
+    nbit_stack #(.WIDTH(WIDTH), .DEPTH(DEPTH)) stack (
+        .clk(clk),
+        .reset(reset),
+        .push(push),
+        .pop(pop),
+        .data_in(data_in),
+        .data_out(data_out),
+        .full(full),
+        .null(null),
+        .scan_in(scan_in),
+        .scan_out(scan_out),
+        .test_mode(test_mode)
+    );
+
+    // Clock generation
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;  // Clock with a 10ns period
+    end
+
+    // Main forever loop for operations
+    initial begin
+        // Initialization
+        reset = 1;
+        push = 0;
+        pop = 0;
+        test_mode = 0;
+        data_in = 4'b0000;  // Set initial data_in value to 0000
+        scan_in = 4'b0000;
+
+        // Apply reset
+        #20 reset = 0;
+
+        // Push and pop operations, working both in normal and test mode
+        forever begin
+            // Push operation for 5 cycles (both normal and test mode)
+            repeat (5) begin
+                if (!full) begin
+                    push = 1;
+                    data_in = data_in + 1;  // Increment the data_in for each push
+                end
+                #10 push = 0;
+                #10;
+            end
+
+            // Pop operation for 3-4 cycles (both normal and test mode)
+            repeat ($urandom_range(3, 4)) begin
+                if (!null) begin
+                    pop = 1;
+                end
+                #10 pop = 0;
+                #10;
+            end
+
+            // After 1000ns, enable test mode
+            if ($time >= 1000 && $time <= 1800) begin
+                test_mode = 1;  // Switch to test mode to start scan chain operations
+               end else begin
+                test_mode = 0; 
+            end
+
+            // Assign random values to scan_in during test mode
+            if (test_mode) begin
+                scan_in = 4'b0101;  // Set a fixed value for scan_in in test mode
+                #10;
+            end
+
+            // Randomly toggle test_mode back and forth after 1800ns
+           // if ($random % 2 && $time <= 1800) begin
+                // test_mode = ~test_mode;
+           // end
+        end
+    end
+
+    // Debugging output
+    initial begin
+        $monitor("Time: %0t | Push: %b | Pop: %b | Data In: %b | Data Out: %b | Full: %b | Null: %b | Test Mode: %b | Scan In: %b | Scan Out: %b",
+                 $time, push, pop, data_in, data_out, full, null, test_mode, scan_in, scan_out);
+    end
+   initial
+    begin
+     $sdf_annotate("nbit_stack_map.sdf", stack,,"sdf_new.log","maximum",,);
+     end
+endmodule
+

@@ -1,0 +1,11 @@
+xrun(64): 23.09-s012: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	23.09-s012: Started on Nov 24, 2024 at 20:39:36 EST
+xrun
+	-64bit
+	-access rwc
+	-gui
+	recognizer_map.v
+	tb_recognizer.v
+xrun: *E,FILEMIS: Cannot find the provided file recognizer_map.v.
+xrun: *E,FILEMIS: Cannot find the provided file tb_recognizer.v.
+TOOL:	xrun(64)	23.09-s012: Exiting on Nov 24, 2024 at 20:39:36 EST  (total: 00:00:00)

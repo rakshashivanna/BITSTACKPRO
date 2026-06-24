@@ -1,0 +1,28 @@
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Fri Dec  6 13:01:28 2024
+
+Design Name: nbit_stack
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (257.0000, 257.4500)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+**** 13:01:28 **** Processed 5000 nets.
+**** 13:01:28 **** Processed 10000 nets.
+**** 13:01:28 **** Processed 15000 nets.
+**** 13:01:29 **** Processed 20000 nets.
+**** 13:01:29 **** Processed 25000 nets.
+**** 13:01:29 **** Processed 30000 nets.
+
+Begin Summary 
+  Found no problems or warnings.
+End Summary
+
+End Time: Fri Dec  6 13:01:29 2024
+Time Elapsed: 0:00:01.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 0 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.6  MEM: 0.000M)
+

@@ -1,0 +1,92 @@
+############################################################################
+# Innovus Netlist Design Rule Check
+# Fri Dec  6 13:01:32 2024
+############################################################################
+Design: nbit_stack
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 32862
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 49429.60
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 32862
+Number of Non-uniquified Insts : 32860
+Number of Nets                 : 30847
+Average number of Pins per Net : 2.78
+Maximum number of Pins in Net  : 101
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 23
+Number of Input Ports          : 13
+Number of Output Ports         : 10
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 23
+**WARN: (IMPREPO-202):	There are 23 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 0
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[849][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[849][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[849][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[849][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[848][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[848][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[848][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[848][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[847][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[847][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[847][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[847][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[846][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[846][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[846][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[846][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[845][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[845][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[845][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[845][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (EMS-27):	Message (IMPDB-2136) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Number of Input/InOut Floating Pins            : 3400
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-218):	There are 3400 Floating Instance terminals.
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 0
+Number of High Fanout nets (>50)               : 35
+**WARN: (IMPREPO-227):	There are 35 High Fanout nets (>50).
+**WARN: (IMPREPO-231):	Input netlist has a cell 'CLKBUFX2' which is marked dont_use in the library. This cell will not be used in timing optimization. Use set_dont_use command to change. Instances of this cell are : <output of dbGet top.insts.cell.name <the cell> -p2
+**WARN: (IMPREPO-231):	Input netlist has a cell 'CLKBUFX12' which is marked dont_use in the library. This cell will not be used in timing optimization. Use set_dont_use command to change. Instances of this cell are : <output of dbGet top.insts.cell.name <the cell> -p2
+**WARN: (IMPREPO-231):	Input netlist has a cell 'CLKBUFX6' which is marked dont_use in the library. This cell will not be used in timing optimization. Use set_dont_use command to change. Instances of this cell are : <output of dbGet top.insts.cell.name <the cell> -p2
+**WARN: (IMPREPO-231):	Input netlist has a cell 'CLKBUFX3' which is marked dont_use in the library. This cell will not be used in timing optimization. Use set_dont_use command to change. Instances of this cell are : <output of dbGet top.insts.cell.name <the cell> -p2
+
+# Number of cells of input netlist marked dont_use = 4.
+
+Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDB-2136        3400  %s term '%s' of %s instance '%s' does no...
+WARNING   IMPREPO-227          1  There are %d High Fanout nets (>50).     
+WARNING   IMPREPO-231          4  Input netlist has a cell '%s' which is m...
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-218          1  There are %d Floating Instance terminals...
+*** Message Summary: 3407 warning(s), 0 error(s)
+

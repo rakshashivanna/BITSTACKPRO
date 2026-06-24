@@ -1,0 +1,74 @@
+*** Begin SPECIAL ROUTE on Fri Dec  6 12:46:22 2024 ***
+SPECIAL ROUTE ran on directory: /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus
+SPECIAL ROUTE ran on machine: ece-rh810-8 (Linux 5.15.0-126-generic x86_64 3.40Ghz)
+
+Begin option processing ...
+srouteConnectPowerBump set to false
+routeSpecial set to true
+srouteConnectConverterPin set to false
+srouteFollowCorePinEnd set to 3
+srouteJogControl set to "preferWithChanges differentLayer"
+sroutePadPinAllPorts set to true
+sroutePreserveExistingRoutes set to true
+srouteRoutePowerBarPortOnBothDir set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 3376.00 megs.
+
+Reading DB technology information...
+Finished reading DB technology information.
+Reading floorplan and netlist information...
+Finished reading floorplan and netlist information.
+**WARN: (IMPSR-4302):	Cap-table/qrcTechFile is found in the design, so the same information from the technology file will be ignored.
+Read in 24 layers, 11 routing layers, 1 overlap layer
+Read in 2 nondefault rules, 0 used
+Read in 583 macros, 8 used
+Read in 8 components
+  8 core components: 8 unplaced, 0 placed, 0 fixed
+Read in 23 physical pins
+  23 physical pins: 0 unplaced, 23 placed, 0 fixed
+Read in 23 nets
+Read in 2 special nets, 2 routed
+Read in 39 terminals
+Begin power routing ...
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VDD net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VDD net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VDD. Check net list, or change port class in the technology file, or change option to include pin in given range.
+**WARN: (IMPSR-1254):	Unable to connect the specified objects, since block pins of the VSS net were not found in the design. Check netlist or change the parameter value to include block pins in the design.
+**WARN: (IMPSR-1256):	Unable to find any CORE class pad pin of the VSS net due to unavailability of the pin or check netlist in the routing area or layer. Change routing area or layer to include the expected pin or check netlist. Alternatively, change port class in the technology file.
+Type 'man IMPSR-1256' for more detail.
+Cannot find any AREAIO class pad pin of net VSS. Check net list, or change port class in the technology file, or change option to include pin in given range.
+CPU time for VDD FollowPin 0 seconds
+CPU time for VSS FollowPin 0 seconds
+  Number of IO ports routed: 0
+  Number of Block ports routed: 0
+  Number of Stripe ports routed: 0
+  Number of Core ports routed: 292
+  Number of Pad ports routed: 0
+  Number of Power Bump ports routed: 0
+  Number of Followpin connections: 146
+End power routing: cpu: 0:00:00, real: 0:00:00, peak: 3388.00 megs.
+
+
+
+ Begin updating DB with routing results ...
+ Updating DB with 23 io pins ...
+ Updating DB with 0 via definition ...Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+
+sroute created 440 wires.
+ViaGen created 2628 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal1 |       438      |       NA       |
+|  Via1  |       292      |        0       |
+|  Via2  |       292      |        0       |
+|  Via3  |       292      |        0       |
+|  Via4  |       292      |        0       |
+| Metal5 |        2       |       NA       |
+|  Via5  |       292      |        0       |
+|  Via6  |       292      |        0       |
+|  Via7  |       292      |        0       |
+|  Via8  |       292      |        0       |
+|  Via9  |       292      |        0       |
++--------+----------------+----------------+

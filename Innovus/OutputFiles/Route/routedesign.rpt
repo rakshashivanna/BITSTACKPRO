@@ -1,0 +1,1475 @@
+#routeDesign: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2197.14 (MB), peak = 2571.35 (MB)
+AAE_INFO: Pre Route call back at the beginning of routeDesign
+#**INFO: setDesignMode -flowEffort standard
+#**INFO: setDesignMode -powerEffort none
+**INFO: User settings:
+setNanoRouteMode -drouteUseMinSpacingForBlockage    auto
+setNanoRouteMode -extractThirdPartyCompatible       false
+setNanoRouteMode -grouteExpTdStdDelay               165
+setNanoRouteMode -routeStrictlyHonorNonDefaultRule  false
+setNanoRouteMode -routeTopRoutingLayer              5
+setDesignMode -topRoutingLayer                      Metal5
+setExtractRCMode -engine                            preRoute
+setDelayCalMode -enable_high_fanout                 true
+setDelayCalMode -engine                             aae
+setDelayCalMode -ignoreNetLoad                      false
+setDelayCalMode -socv_accuracy_mode                 low
+setSIMode -separate_delta_delay_on_data             true
+
+#**INFO: multi-cut via swapping will be performed after routing.
+#**INFO: All auto set options tuned by routeDesign will be restored to their original settings on command completion.
+Begin checking placement ... (start mem=2874.8M, init mem=2874.8M)
+*info: Placed = 32862          (Fixed = 2065)
+*info: Unplaced = 0           
+Placement Density:79.60%(48041/60351)
+Placement Density (including fixed std cells):80.06%(49430/61740)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.1, real=0:00:00.0; mem=2874.8M)
+
+changeUseClockNetStatus Option :  -noFixedNetWires 
+*** Changed status on (36) nets in Clock.
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=2874.8M) ***
+#Start route 178 clock and analog nets...
+% Begin globalDetailRoute (date=12/06 12:59:22, mem=2198.6M)
+
+globalDetailRoute
+
+#Start globalDetailRoute on Fri Dec  6 12:59:22 2024
+#
+Skipped RC grid update for preRoute extraction.
+Initializing multi-corner resistance tables ...
+#WARNING (NRIG-1303) The congestion map does not match the GCELL grid. Clearing the map.
+#num needed restored net=30669
+#need_extraction net=0 (total=30847)
+#NanoRoute Version 21.19-s058_1 NR231113-0413/21_19-UB
+#Skip comparing routing design signature in db-snapshot flow
+#Total number of trivial nets (e.g. < 2 pins) = 2 (skipped).
+#Total number of nets with skipped attribute = 30667 (skipped).
+#Total number of routable nets = 178.
+#Total number of nets in the design = 30847.
+#177 routable nets do not have any wires.
+#1 routable net has routed wires.
+#30667 skipped nets have only detail routed wires.
+#177 nets will be global routed.
+#177 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#1 detail routed (routable) net has been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#Start routing data preparation on Fri Dec  6 12:59:22 2024
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Build and mark too close pins for the same net.
+#Rebuild pin access data for design.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# Metal1       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.13000
+# Metal2       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal3       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal4       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal5       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal6       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal7       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal8       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal9       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal10      V   Track-Pitch = 0.50000    Line-2-Via Pitch = 0.42000
+# Metal11      H   Track-Pitch = 0.47500    Line-2-Via Pitch = 0.43000
+#Bottom routing layer index=1(Metal1), bottom routing layer for shielding=1(Metal1), bottom shield layer=1(Metal1)
+#shield_bottom_stripe_layer=1(Metal1), shield_top_stripe_layer=5(Metal5)
+#pin_access_rlayer=2(Metal2)
+#shield_top_dpt_rlayer=-1 top_rlayer=5 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=1
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2205.92 (MB), peak = 2571.35 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2208.20 (MB), peak = 2571.35 (MB)
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Finished routing data preparation on Fri Dec  6 12:59:23 2024
+#
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 6.50 (MB)
+#Total memory = 2208.20 (MB)
+#Peak memory = 2571.35 (MB)
+#
+#
+#Start global routing on Fri Dec  6 12:59:23 2024
+#
+#
+#Start global routing initialization on Fri Dec  6 12:59:23 2024
+#
+#Number of eco nets is 35
+#
+#Start global routing data preparation on Fri Dec  6 12:59:23 2024
+#
+#Start routing resource analysis on Fri Dec  6 12:59:23 2024
+#
+#Routing resource analysis is done on Fri Dec  6 12:59:23 2024
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal1         H          89        1266        8100    89.11%
+#  Metal2         V        1259          26        8100     0.00%
+#  Metal3         H        1343          12        8100     0.00%
+#  Metal4         V        1257          28        8100     0.00%
+#  Metal5         H        1345          10        8100     0.00%
+#  --------------------------------------------------------------
+#  Total                   5294      19.84%       40500    17.82%
+#
+#  178 nets (0.58%) with 1 preferred extra spacing.
+#
+#
+#
+#Global routing data preparation is done on Fri Dec  6 12:59:23 2024
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2208.94 (MB), peak = 2571.35 (MB)
+#
+#
+#Global routing initialization is done on Fri Dec  6 12:59:23 2024
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2209.13 (MB), peak = 2571.35 (MB)
+#
+#start global routing iteration 1...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2216.61 (MB), peak = 2571.35 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2216.63 (MB), peak = 2571.35 (MB)
+#
+#start global routing iteration 3...
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2216.63 (MB), peak = 2571.35 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 2 (skipped).
+#Total number of nets with skipped attribute = 30667 (skipped).
+#Total number of routable nets = 178.
+#Total number of nets in the design = 30847.
+#
+#178 routable nets have routed wires.
+#30667 skipped nets have only detail routed wires.
+#177 global routed or unrouted (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#1 detail routed (routable) net has been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Routed net constraints summary:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                177               0  
+#------------------------------------------------
+#        Total                177               0  
+#------------------------------------------------
+#
+#Routing constraints summary of the whole design:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                178           30667  
+#------------------------------------------------
+#        Total                178           30667  
+#------------------------------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon          
+#                  #Gcell    %Gcell
+#     Layer           (1)   OverCon
+#  --------------------------------
+#  Metal1        0(0.00%)   (0.00%)
+#  Metal2        0(0.00%)   (0.00%)
+#  Metal3        0(0.00%)   (0.00%)
+#  Metal4        0(0.00%)   (0.00%)
+#  Metal5        0(0.00%)   (0.00%)
+#  --------------------------------
+#     Total      0(0.00%)   (0.00%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 1
+#  Overflow after GR: 0.00% H + 0.00% V
+#
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 178
+#Total wire length = 15469 um.
+#Total half perimeter of net bounding box = 4232 um.
+#Total wire length on LAYER Metal1 = 1 um.
+#Total wire length on LAYER Metal2 = 1702 um.
+#Total wire length on LAYER Metal3 = 8790 um.
+#Total wire length on LAYER Metal4 = 4976 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 9439
+#Up-Via Summary (total 9439):
+#           
+#-----------------------
+# Metal1           3660
+# Metal2           3519
+# Metal3           2260
+#-----------------------
+#                  9439 
+#
+#Total number of involved priority nets 177
+#Maximum src to sink distance for priority net 99.9
+#Average of max src_to_sink distance for priority net 21.5
+#Average of ave src_to_sink distance for priority net 14.8
+#Max overcon = 0 track.
+#Total overcon = 0.00%.
+#Worst layer Gcell overcon rate = 0.00%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 5.37 (MB)
+#Total memory = 2213.57 (MB)
+#Peak memory = 2571.35 (MB)
+#
+#Finished global routing on Fri Dec  6 12:59:23 2024
+#
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2213.00 (MB), peak = 2571.35 (MB)
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Start Track Assignment.
+#Done with 548 horizontal wires in 3 hboxes and 148 vertical wires in 3 hboxes.
+#Done with 14 horizontal wires in 3 hboxes and 1 vertical wires in 3 hboxes.
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 178
+#Total wire length = 15460 um.
+#Total half perimeter of net bounding box = 4232 um.
+#Total wire length on LAYER Metal1 = 1 um.
+#Total wire length on LAYER Metal2 = 1702 um.
+#Total wire length on LAYER Metal3 = 8790 um.
+#Total wire length on LAYER Metal4 = 4967 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 9439
+#Up-Via Summary (total 9439):
+#           
+#-----------------------
+# Metal1           3660
+# Metal2           3519
+# Metal3           2260
+#-----------------------
+#                  9439 
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2213.25 (MB), peak = 2571.35 (MB)
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:01
+#Increased memory = 11.55 (MB)
+#Total memory = 2213.25 (MB)
+#Peak memory = 2571.35 (MB)
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+# ECO: 5.33% of the total area was rechecked for DRC, and 94.67% required routing.
+#   number of violations = 0
+#26338 out of 32862 instances (80.1%) need to be verified(marked ipoed), dirty area = 57.4%.
+#   number of violations = 0
+#cpu time = 00:00:08, elapsed time = 00:00:08, memory = 2213.17 (MB), peak = 2571.35 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 178
+#Total wire length = 16131 um.
+#Total half perimeter of net bounding box = 4232 um.
+#Total wire length on LAYER Metal1 = 3 um.
+#Total wire length on LAYER Metal2 = 1893 um.
+#Total wire length on LAYER Metal3 = 8942 um.
+#Total wire length on LAYER Metal4 = 5293 um.
+#Total wire length on LAYER Metal5 = 0 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 10291
+#Up-Via Summary (total 10291):
+#           
+#-----------------------
+# Metal1           3797
+# Metal2           3815
+# Metal3           2679
+#-----------------------
+#                 10291 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:08
+#Increased memory = -0.08 (MB)
+#Total memory = 2213.17 (MB)
+#Peak memory = 2571.35 (MB)
+#detailRoute Statistics:
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:08
+#Increased memory = -0.08 (MB)
+#Total memory = 2213.17 (MB)
+#Peak memory = 2571.35 (MB)
+#Skip updating routing design signature in db-snapshot flow
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:00:10
+#Elapsed time = 00:00:10
+#Increased memory = 5.59 (MB)
+#Total memory = 2204.20 (MB)
+#Peak memory = 2571.35 (MB)
+#Number of warnings = 1
+#Total number of warnings = 148
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Fri Dec  6 12:59:32 2024
+#
+% End globalDetailRoute (date=12/06 12:59:32, total cpu=0:00:09.8, real=0:00:10.0, peak res=2204.3M, current mem=2204.3M)
+#**INFO: auto set of droutePostRouteSwapVia to multiCut
+% Begin globalDetailRoute (date=12/06 12:59:32, mem=2204.3M)
+
+globalDetailRoute
+
+#Start globalDetailRoute on Fri Dec  6 12:59:32 2024
+#
+#Generating timing data, please wait...
+#30845 total nets, 178 already routed, 178 will ignore in trialRoute
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+#View pruning: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2204.63 (MB), peak = 2571.35 (MB)
+#Reporting timing...
+###############################################################
+#  Generated by:      Cadence Innovus 21.19-s058_1
+#  OS:                Linux x86_64(Host ID ece-rh810-8)
+#  Generated on:      Fri Dec  6 12:59:34 2024
+#  Design:            nbit_stack
+#  Command:           routeDesign > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/Route/routedesign.rpt
+###############################################################
+#Normalized TNS: -318.215 -> -322.733, r2r -318.215 -> -322.733, unit 1000.000, clk period 0.986 (ns)
+#Stage 1: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 2265.63 (MB), peak = 2571.35 (MB)
+#Library Standard Delay: 165.00ps
+#Slack threshold: 330.00ps
+#*** Analyzed 13744 timing critical paths, and collected 6872.
+#Stage 2: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2266.03 (MB), peak = 2571.35 (MB)
+#Stage 3: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2273.40 (MB), peak = 2571.35 (MB)
+#Default setup view is reset to nbit_stack_view_setup.
+#Stage 4: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2273.40 (MB), peak = 2571.35 (MB)
+#Current view: nbit_stack_view_setup 
+#Current enabled view: nbit_stack_view_setup 
+#Generating timing data took: cpu time = 00:00:03, elapsed time = 00:00:03, memory = 2273.40 (MB), peak = 2571.35 (MB)
+#Done generating timing data.
+#WARNING (NRIG-1303) The congestion map does not match the GCELL grid. Clearing the map.
+#num needed restored net=0
+#need_extraction net=0 (total=30847)
+#NanoRoute Version 21.19-s058_1 NR231113-0413/21_19-UB
+#Start routing data preparation on Fri Dec  6 12:59:35 2024
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Build and mark too close pins for the same net.
+#Initial pin access analysis.
+#Detail pin access analysis.
+# Metal1       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.13000
+# Metal2       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal3       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal4       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal5       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal6       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal7       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal8       V   Track-Pitch = 0.20000    Line-2-Via Pitch = 0.15000
+# Metal9       H   Track-Pitch = 0.19000    Line-2-Via Pitch = 0.15000
+# Metal10      V   Track-Pitch = 0.50000    Line-2-Via Pitch = 0.42000
+# Metal11      H   Track-Pitch = 0.47500    Line-2-Via Pitch = 0.43000
+#Bottom routing layer index=1(Metal1), bottom routing layer for shielding=1(Metal1), bottom shield layer=1(Metal1)
+#shield_bottom_stripe_layer=1(Metal1), shield_top_stripe_layer=5(Metal5)
+#pin_access_rlayer=2(Metal2)
+#shield_top_dpt_rlayer=-1 top_rlayer=5 top_trim_metal_rlayer=-1 rlayer_lowest=1 bottom_rlayer=1
+#enable_trim_layer_shield=F enable_dpt_layer_shield=F has_line_end_grid=F
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2279.05 (MB), peak = 2571.35 (MB)
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer Metal3's pitch = 0.19000.
+#Using automatically generated G-grids.
+#Done routing data preparation.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2281.34 (MB), peak = 2571.35 (MB)
+#
+#Summary of active signal nets routing constraints set by OPT:
+#	preferred routing layers      : 0
+#	preferred routing layer effort: 0
+#	preferred extra space         : 0
+#	preferred multi-cut via       : 0
+#	avoid detour                  : 0
+#	expansion ratio               : 0
+#	net priority                  : 0
+#	s2s control                   : 0
+#	avoid chaining                : 0
+#	inst-based stacking via       : 0
+#
+#Summary of active signal nets routing constraints set by USER:
+#	preferred routing layers      : 0
+#	preferred routing layer effort     : 0
+#	preferred extra space              : 0
+#	preferred multi-cut via            : 0
+#	avoid detour                       : 0
+#	net weight                         : 0
+#	avoid chaining                     : 0
+#	cell-based stacking via (required) : 0
+#	cell-based stacking via (optional) : 0
+#
+#Start timing driven prevention iteration...
+#
+#----------------------------------------------------
+# Summary of active signal nets routing constraints
+#+--------------------------+-----------+
+#+--------------------------+-----------+
+#
+#----------------------------------------------------
+#Done timing-driven prevention
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2281.34 (MB), peak = 2571.35 (MB)
+#Total number of trivial nets (e.g. < 2 pins) = 2 (skipped).
+#Total number of routable nets = 30845.
+#Total number of nets in the design = 30847.
+#30667 routable nets do not have any wires.
+#178 routable nets have routed wires.
+#30667 nets will be global routed.
+#178 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Finished routing data preparation on Fri Dec  6 12:59:35 2024
+#
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.00 (MB)
+#Total memory = 2281.34 (MB)
+#Peak memory = 2571.35 (MB)
+#
+#
+#Start global routing on Fri Dec  6 12:59:35 2024
+#
+#
+#Start global routing initialization on Fri Dec  6 12:59:35 2024
+#
+#Number of eco nets is 0
+#
+#Start global routing data preparation on Fri Dec  6 12:59:35 2024
+#
+#Start routing resource analysis on Fri Dec  6 12:59:35 2024
+#
+#Routing resource analysis is done on Fri Dec  6 12:59:35 2024
+#
+#  Resource Analysis:
+#
+#               Routing  #Avail      #Track     #Total     %Gcell
+#  Layer      Direction   Track     Blocked      Gcell    Blocked
+#  --------------------------------------------------------------
+#  Metal1         H          89        1266        8100    89.11%
+#  Metal2         V        1209          76        8100     0.00%
+#  Metal3         H        1282          73        8100     0.00%
+#  Metal4         V        1231          54        8100     0.00%
+#  Metal5         H        1345          10        8100     0.00%
+#  --------------------------------------------------------------
+#  Total                   5157      21.91%       40500    17.82%
+#
+#  178 nets (0.58%) with 1 preferred extra spacing.
+#
+#
+#
+#Global routing data preparation is done on Fri Dec  6 12:59:35 2024
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2281.96 (MB), peak = 2571.35 (MB)
+#
+#
+#Global routing initialization is done on Fri Dec  6 12:59:35 2024
+#
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2281.96 (MB), peak = 2571.35 (MB)
+#
+#Skip 1/2 round for no nets in the round...
+#Route nets in 2/2 round...
+#start global routing iteration 1...
+#cpu time = 00:00:04, elapsed time = 00:00:04, memory = 2280.32 (MB), peak = 2571.35 (MB)
+#
+#start global routing iteration 2...
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 2280.32 (MB), peak = 2571.35 (MB)
+#
+#
+#Total number of trivial nets (e.g. < 2 pins) = 2 (skipped).
+#Total number of routable nets = 30845.
+#Total number of nets in the design = 30847.
+#
+#30845 routable nets have routed wires.
+#178 detail routed (routable) nets have been constrained (e.g. have preferred extra spacing, require shielding etc.)
+#
+#Routed nets constraints summary:
+#-----------------------------
+#        Rules   Unconstrained  
+#-----------------------------
+#      Default           30667  
+#-----------------------------
+#        Total           30667  
+#-----------------------------
+#
+#Routing constraints summary of the whole design:
+#------------------------------------------------
+#        Rules   Pref Extra Space   Unconstrained  
+#------------------------------------------------
+#      Default                178           30667  
+#------------------------------------------------
+#        Total                178           30667  
+#------------------------------------------------
+#
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer         (1-2)         (3-4)           (5)   OverCon
+#  ------------------------------------------------------------
+#  Metal1        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  Metal2       82(1.01%)      6(0.07%)      1(0.01%)   (1.10%)
+#  Metal3       72(0.89%)      7(0.09%)      0(0.00%)   (0.98%)
+#  Metal4       37(0.46%)      0(0.00%)      0(0.00%)   (0.46%)
+#  Metal5        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  ------------------------------------------------------------
+#     Total    191(0.55%)     13(0.04%)      1(0.00%)   (0.59%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 5
+#  Overflow after GR: 0.23% H + 0.36% V
+#
+#Hotspot report including placement blocked areas
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      layer     |    max hotspot    |   total hotspot   |            hotspot bbox             |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   Metal1(H)    |              1.00 |              1.00 |   239.40   184.68   246.24   191.52 |
+[hotspot] |   Metal2(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   Metal3(H)    |             15.00 |             15.00 |   143.63    75.23   171.00   123.12 |
+[hotspot] |   Metal4(V)    |              8.00 |             13.00 |   143.63    82.08   171.00   102.59 |
+[hotspot] |   Metal5(H)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      worst     | (Metal3)    15.00 | (Metal3)    15.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   all layers   |              4.00 |              6.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+Local HotSpot Analysis (blockage included) (3d): normalized congestion max/total hotspot area = 4.00/6.00 (area is in unit of 4 std-cell row bins)
+[hotspot] top 2 congestion hotspot bounding boxes and scores of all layers hotspot
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] | top |            hotspot bbox             | hotspot score |
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] |  1  |   143.63    88.92   157.31   109.44 |        4.00   |
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] |  2  |   150.47    82.08   164.16    88.92 |        2.00   |
+[hotspot] +-----+-------------------------------------+---------------+
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 178
+#Total wire length = 342917 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 40 um.
+#Total wire length on LAYER Metal2 = 63097 um.
+#Total wire length on LAYER Metal3 = 100315 um.
+#Total wire length on LAYER Metal4 = 103042 um.
+#Total wire length on LAYER Metal5 = 76423 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 148807
+#Up-Via Summary (total 148807):
+#           
+#-----------------------
+# Metal1          76941
+# Metal2          48260
+# Metal3          16897
+# Metal4           6709
+#-----------------------
+#                148807 
+#
+#Total number of involved regular nets 4545
+#Maximum src to sink distance  241.4
+#Average of max src_to_sink distance  36.4
+#Average of ave src_to_sink distance  27.9
+#Max overcon = 5 tracks.
+#Total overcon = 0.59%.
+#Worst layer Gcell overcon rate = 0.98%.
+#
+#Global routing statistics:
+#Cpu time = 00:00:06
+#Elapsed time = 00:00:06
+#Increased memory = -0.91 (MB)
+#Total memory = 2280.42 (MB)
+#Peak memory = 2571.35 (MB)
+#
+#Finished global routing on Fri Dec  6 12:59:41 2024
+#
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2279.86 (MB), peak = 2571.35 (MB)
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Start Track Assignment.
+#Done with 28484 horizontal wires in 3 hboxes and 26576 vertical wires in 3 hboxes.
+#Done with 7504 horizontal wires in 3 hboxes and 5843 vertical wires in 3 hboxes.
+#Done with 3 horizontal wires in 3 hboxes and 3 vertical wires in 3 hboxes.
+#
+#Track assignment summary:
+# layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+#------------------------------------------------------------------------
+# Metal1        33.04 	  0.00%  	  0.00% 	  0.00%
+# Metal2     59614.11 	  0.10%  	  0.00% 	  0.00%
+# Metal3     89219.99 	  0.27%  	  0.00% 	  0.02%
+# Metal4     97023.55 	  0.08%  	  0.00% 	  0.01%
+# Metal5     76172.65 	  0.03%  	  0.00% 	  0.00%
+#------------------------------------------------------------------------
+# All      322063.36  	  0.12% 	  0.00% 	  0.00%
+#Complete Track Assignment.
+#Total number of nets with non-default rule or having extra spacing = 178
+#Total wire length = 335762 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 36 um.
+#Total wire length on LAYER Metal2 = 60481 um.
+#Total wire length on LAYER Metal3 = 97300 um.
+#Total wire length on LAYER Metal4 = 101928 um.
+#Total wire length on LAYER Metal5 = 76017 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 148807
+#Up-Via Summary (total 148807):
+#           
+#-----------------------
+# Metal1          76941
+# Metal2          48260
+# Metal3          16897
+# Metal4           6709
+#-----------------------
+#                148807 
+#
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 2280.07 (MB), peak = 2571.35 (MB)
+#
+#number of short segments in preferred routing layers
+#	
+#	
+#
+#Start post global route fixing for timing critical nets ...
+#
+#* Updating design timing data...
+#Extracting RC...
+Un-suppress "**WARN ..." messages.
+#
+#Start tQuantus RC extraction...
+#Finish check_net_pin_list step Enter extract_rc_after_routing
+#Extract in track assign mode
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Start building rc corner(s)...
+#Number of RC Corner = 1
+#Corner nbit_stack_rc_corner /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch 25.000000 (real) 
+#(i=11, n=11 2000)
+#METAL_1 -> Metal1 (1)
+#METAL_2 -> Metal2 (2)
+#METAL_3 -> Metal3 (3)
+#METAL_4 -> Metal4 (4)
+#METAL_5 -> Metal5 (5)
+#METAL_6 -> Metal6 (6)
+#METAL_7 -> Metal7 (7)
+#METAL_8 -> Metal8 (8)
+#METAL_9 -> Metal9 (9)
+#METAL_10 -> Metal10 (10)
+#METAL_11 -> Metal11 (11)
+#SADV_On
+# Corner(s) : 
+#nbit_stack_rc_corner [25.00]
+# Corner id: 0
+# Layout Scale: 1.000000
+# Has Metal Fill model: yes
+# Temperature was set
+# Temperature : 25.000000
+# Ref. Temp   : 25.000000
+#SADV_Off
+#total pattern=286 [11, 792]
+#Reading previously stored rc_model file ( rc_model.bin ) ...
+#found CAPMODEL /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch
+#found RESMODEL /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch 25.000000 
+#number model r/c [1,1] [11,792] read
+#Build RC corners: cpu time = 00:00:00, elapsed time = 00:00:01, memory = 2285.13 (MB), peak = 2571.35 (MB)
+#Finish check_net_pin_list step Enter extract
+#Start init net ripin tree building
+#Finish init net ripin tree building
+#Cpu time = 00:00:00
+#Elapsed time = 00:00:00
+#Increased memory = 0.16 (MB)
+#Total memory = 2289.35 (MB)
+#Peak memory = 2571.35 (MB)
+#begin processing metal fill model file
+#end processing metal fill model file
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Start Post Track Assignment Wire Spread.
+#Done with 10774 horizontal wires in 3 hboxes and 10073 vertical wires in 3 hboxes.
+#Complete Post Track Assignment Wire Spread.
+#
+#Length limit = 200 pitches
+#opt mode = 2
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Finish check_net_pin_list step Fix net pin list
+#Start generate extraction boxes.
+#
+#Extract using 30 x 30 Hboxes
+#4x4 initial hboxes
+#Use area based hbox pruning.
+#0/0 hboxes pruned.
+#Complete generating extraction boxes.
+#Extract 9 hboxes with single thread on machine with  Core_i7 3.40GHz 33792KB Cache 28CPU...
+#Process 0 special clock nets for rc extraction
+#Total 30845 nets were built. 1009 nodes added to break long wires. 0 net(s) have incomplete routes.
+#Run Statistics for Extraction:
+#   Cpu time = 00:00:02, elapsed time = 00:00:02 .
+#   Increased memory =    45.93 (MB), total memory =  2335.67 (MB), peak memory =  2571.35 (MB)
+#
+#Scale RC for track assignment: res 1.000000; cap 1.000000; clk res 1.000000; clk cap 1.000000, xcap 1.000000
+#Simplify RC tree: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2292.80 (MB), peak = 2571.35 (MB)
+#RC Statistics: 83136 Res, 53701 Ground Cap, 2158 XCap (Edge to Edge)
+#RC V/H edge ratio: 0.40, Avg V/H Edge Length: 3573.90 (52369), Avg L-Edge Length: 16881.82 (16601)
+#Register nets and terms for rcdb /tmp/innovus_temp_1790710_ece-rh810-8_shivansa_0pSoYY/nr1790710_5TS7Xu.rcdb.d
+#Finish registering nets and terms for rcdb.
+#Start writing RC data.
+#Finish writing RC data
+#Finish writing rcdb with 139481 nodes, 108636 edges, and 4508 xcaps
+#1009 inserted nodes are removed
+#Restored 0 tie nets, 0 tie snets, 0 partial nets
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Remove Post Track Assignment Wire Spread
+Restoring parasitic data from file '/tmp/innovus_temp_1790710_ece-rh810-8_shivansa_0pSoYY/nr1790710_5TS7Xu.rcdb.d' ...
+Reading RCDB with compressed RC data.
+Reading RCDB with compressed RC data.
+Begin read_parasitics... (cpu: 0:00:00.0 real: 0:00:00.0 mem: 3011.406M)
+Following multi-corner parasitics specified:
+	/tmp/innovus_temp_1790710_ece-rh810-8_shivansa_0pSoYY/nr1790710_5TS7Xu.rcdb.d (rcdb)
+Reading RCDB with compressed RC data.
+		Cell nbit_stack has rcdb /tmp/innovus_temp_1790710_ece-rh810-8_shivansa_0pSoYY/nr1790710_5TS7Xu.rcdb.d specified
+Cell nbit_stack, hinst 
+Reading RCDB with compressed RC data.
+Done read_parasitics... (cpu: 0:00:00.2 real: 0:00:00.0 mem: 3011.406M)
+#
+#Restore RCDB.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Remove Post Track Assignment Wire Spread
+#
+#Complete tQuantus RC extraction.
+#Cpu time = 00:00:05
+#Elapsed time = 00:00:05
+#Increased memory = 14.85 (MB)
+#Total memory = 2295.63 (MB)
+#Peak memory = 2571.35 (MB)
+#
+Un-suppress "**WARN ..." messages.
+#RC Extraction Completed...
+AAE_INFO: switching -siAware from false to true ...
+**WARN: (IMPDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+#Reporting timing...
+###############################################################
+#  Generated by:      Cadence Innovus 21.19-s058_1
+#  OS:                Linux x86_64(Host ID ece-rh810-8)
+#  Generated on:      Fri Dec  6 12:59:50 2024
+#  Design:            nbit_stack
+#  Command:           routeDesign > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/Route/routedesign.rpt
+###############################################################
+#Normalized TNS: -650.904 -> -660.146, r2r -649.911 -> -659.139, unit 1000.000, clk period 0.986 (ns)
+#Stage 1: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 2303.58 (MB), peak = 2571.35 (MB)
+#Library Standard Delay: 165.00ps
+#Slack threshold: 0.00ps
+#*** Analyzed 13634 timing critical paths, and collected 6820.
+#Stage 2: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2303.75 (MB), peak = 2571.35 (MB)
+#Stage 3: cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2304.38 (MB), peak = 2571.35 (MB)
+Worst slack reported in the design = 0.311719 (late)
+
+*** writeDesignTiming (0:00:00.6) ***
+#Stage 4: cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2305.02 (MB), peak = 2571.35 (MB)
+Un-suppress "**WARN ..." messages.
+#Number of victim nets: 0
+#Number of aggressor nets: 0
+#Number of weak nets: 6125
+#Number of critical nets: 0
+#	level 1 [   0.0, -1000.0]: 0 nets
+#	level 2 [   0.0, -1000.0]: 0 nets
+#	level 3 [   0.0, -1000.0]: 0 nets
+#Total number of nets: 30845
+#Total number of significant detoured timing critical nets is 0
+#Total number of selected detoured timing critical nets is 0
+#Setup timing driven post global route constraints on 10973 nets
+#31 critical nets are selected for extra spacing.
+#Postfix stack gain threshold: Min=0.2 ps, 1-stack=330 ps
+#0 nets (0 um) assigned to layer Metal3
+#0 inserted nodes are removed
+#Restored 0 tie nets, 0 tie snets, 0 partial nets
+#
+#  Congestion Analysis: (blocked Gcells are excluded)
+#
+#                 OverCon       OverCon       OverCon          
+#                  #Gcell        #Gcell        #Gcell    %Gcell
+#     Layer         (1-2)         (3-4)           (5)   OverCon
+#  ------------------------------------------------------------
+#  Metal1        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  Metal2       75(0.93%)      5(0.06%)      1(0.01%)   (1.00%)
+#  Metal3       72(0.89%)      7(0.09%)      0(0.00%)   (0.98%)
+#  Metal4       37(0.46%)      0(0.00%)      0(0.00%)   (0.46%)
+#  Metal5        0(0.00%)      0(0.00%)      0(0.00%)   (0.00%)
+#  ------------------------------------------------------------
+#     Total    184(0.53%)     12(0.03%)      1(0.00%)   (0.57%)
+#
+#  The worst congested Gcell overcon (routing demand over resource in number of tracks) = 5
+#  Overflow after GR: 0.23% H + 0.34% V
+#
+#Hotspot report including placement blocked areas
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      layer     |    max hotspot    |   total hotspot   |            hotspot bbox             |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   Metal1(H)    |              1.00 |              1.00 |   239.40   184.68   246.24   191.52 |
+[hotspot] |   Metal2(V)    |              0.00 |              0.00 |   (none)                            |
+[hotspot] |   Metal3(H)    |             18.00 |             18.00 |   143.63    75.23   177.84   123.12 |
+[hotspot] |   Metal4(V)    |             10.00 |             14.00 |   143.63    82.08   177.84   102.59 |
+[hotspot] |   Metal5(H)    |              2.00 |              2.00 |   157.31    82.08   171.00    88.92 |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |      worst     | (Metal3)    18.00 | (Metal3)    18.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+[hotspot] |   all layers   |              5.00 |              9.00 |                                     |
+[hotspot] +----------------+-------------------+-------------------+-------------------------------------+
+Local HotSpot Analysis (blockage included) (3d): normalized congestion max/total hotspot area = 5.00/9.00 (area is in unit of 4 std-cell row bins)
+[hotspot] top 2 congestion hotspot bounding boxes and scores of all layers hotspot
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] | top |            hotspot bbox             | hotspot score |
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] |  1  |   157.31    75.23   177.84    88.92 |        5.00   |
+[hotspot] +-----+-------------------------------------+---------------+
+[hotspot] |  2  |   143.63    88.92   157.31   109.44 |        4.00   |
+[hotspot] +-----+-------------------------------------+---------------+
+#Max overcon = 5 tracks.
+#Total overcon = 0.70%.
+#Worst layer Gcell overcon rate = 1.22%.
+#
+#----------------------------------------------------
+# Summary of active signal nets routing constraints
+#+--------------------------+-----------+
+#| Prefer Extra Space       |        31 |
+#+--------------------------+-----------+
+#
+#----------------------------------------------------
+#Complete Global Routing.
+#Total number of nets with non-default rule or having extra spacing = 209
+#Total wire length = 335750 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 36 um.
+#Total wire length on LAYER Metal2 = 60458 um.
+#Total wire length on LAYER Metal3 = 97320 um.
+#Total wire length on LAYER Metal4 = 101919 um.
+#Total wire length on LAYER Metal5 = 76017 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 148807
+#Up-Via Summary (total 148807):
+#           
+#-----------------------
+# Metal1          76941
+# Metal2          48260
+# Metal3          16897
+# Metal4           6709
+#-----------------------
+#                148807 
+#
+#Total number of involved regular nets 4545
+#Maximum src to sink distance  241.8
+#Average of max src_to_sink distance  36.7
+#Average of ave src_to_sink distance  28.1
+#Total number of involved priority nets 178
+#Maximum src to sink distance for priority net 293.4
+#Average of max src_to_sink distance for priority net 20.9
+#Average of ave src_to_sink distance for priority net 13.3
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 2312.27 (MB), peak = 2571.35 (MB)
+Current (total cpu=0:10:00, real=0:14:49, peak res=2571.3M, current mem=2210.9M)
+nbit_stack
+Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=2222.1M, current mem=2222.1M)
+Current (total cpu=0:10:00, real=0:14:49, peak res=2571.3M, current mem=2222.1M)
+Current (total cpu=0:10:00, real=0:14:49, peak res=2571.3M, current mem=2222.2M)
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=2252.0M, current mem=2252.0M)
+Current (total cpu=0:10:00, real=0:14:50, peak res=2571.3M, current mem=2252.0M)
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 2251.96 (MB), peak = 2571.35 (MB)
+#* Importing design timing data...
+#Number of victim nets: 0
+#Number of aggressor nets: 0
+#Number of weak nets: 6125
+#Number of critical nets: 0
+#	level 1 [   0.0, -1000.0]: 0 nets
+#	level 2 [   0.0, -1000.0]: 0 nets
+#	level 3 [   0.0, -1000.0]: 0 nets
+#Total number of nets: 30845
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#timing driven effort level: 3
+#Start Track Assignment With Timing Driven.
+#Done with 1018 horizontal wires in 3 hboxes and 897 vertical wires in 3 hboxes.
+#Done with 105 horizontal wires in 3 hboxes and 171 vertical wires in 3 hboxes.
+#Done with 3 horizontal wires in 3 hboxes and 3 vertical wires in 3 hboxes.
+#
+#Track assignment summary:
+# layer   (wire length)   (overlap)     (long ovlp)	(with obs/pg/clk)  
+#------------------------------------------------------------------------
+# Metal1        33.04 	  0.00%  	  0.00% 	  0.00%
+# Metal2     59612.77 	  0.05%  	  0.00% 	  0.00%
+# Metal3     89189.24 	  0.23%  	  0.00% 	  0.02%
+# Metal4     97019.29 	  0.08%  	  0.00% 	  0.01%
+# Metal5     76170.37 	  0.03%  	  0.00% 	  0.00%
+#------------------------------------------------------------------------
+# All      322024.73  	  0.10% 	  0.00% 	  0.00%
+#Complete Track Assignment With Timing Driven.
+#Total number of nets with non-default rule or having extra spacing = 209
+#Total wire length = 335745 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 36 um.
+#Total wire length on LAYER Metal2 = 60493 um.
+#Total wire length on LAYER Metal3 = 97279 um.
+#Total wire length on LAYER Metal4 = 101925 um.
+#Total wire length on LAYER Metal5 = 76012 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 148807
+#Up-Via Summary (total 148807):
+#           
+#-----------------------
+# Metal1          76941
+# Metal2          48260
+# Metal3          16897
+# Metal4           6709
+#-----------------------
+#                148807 
+#
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2252.15 (MB), peak = 2571.35 (MB)
+#
+#Routing data preparation, pin analysis, global routing and track assignment statistics:
+#Cpu time = 00:00:19
+#Elapsed time = 00:00:20
+#Increased memory = -23.14 (MB)
+#Total memory = 2252.02 (MB)
+#Peak memory = 2571.35 (MB)
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Start reading timing information from file .timing_file_1790710.tif.gz ...
+#Read in timing information for 23 ports, 30832 instances from timing file .timing_file_1790710.tif.gz.
+#
+#Start Detail Routing..
+#start initial detail routing ...
+#   number of violations = 84
+#
+#    By Layer and Type :
+#	          Short      Mar   Totals
+#	Metal1        0        0        0
+#	Metal2       82        2       84
+#	Totals       82        2       84
+#cpu time = 00:00:38, elapsed time = 00:00:38, memory = 2277.45 (MB), peak = 2571.35 (MB)
+#start 1st optimization iteration ...
+#   number of violations = 56
+#
+#    By Layer and Type :
+#	         MetSpc    Short   Totals
+#	Metal1        0        0        0
+#	Metal2        2       54       56
+#	Totals        2       54       56
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2277.37 (MB), peak = 2571.35 (MB)
+#start 2nd optimization iteration ...
+#   number of violations = 57
+#
+#    By Layer and Type :
+#	         MetSpc   EOLSpc    Short      Mar   Totals
+#	Metal1        0        2        0        0        2
+#	Metal2        3        0       51        1       55
+#	Totals        3        2       51        1       57
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2277.20 (MB), peak = 2571.35 (MB)
+#start 3rd optimization iteration ...
+#   number of violations = 0
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2277.22 (MB), peak = 2571.35 (MB)
+#Complete Detail Routing.
+#Total number of nets with non-default rule or having extra spacing = 209
+#Total wire length = 362342 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 6688 um.
+#Total wire length on LAYER Metal2 = 84086 um.
+#Total wire length on LAYER Metal3 = 104635 um.
+#Total wire length on LAYER Metal4 = 101388 um.
+#Total wire length on LAYER Metal5 = 65544 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 156278
+#Up-Via Summary (total 156278):
+#           
+#-----------------------
+# Metal1          78834
+# Metal2          54177
+# Metal3          17608
+# Metal4           5659
+#-----------------------
+#                156278 
+#
+#Total number of DRC violations = 0
+#Cpu time = 00:00:43
+#Elapsed time = 00:00:43
+#Increased memory = 25.20 (MB)
+#Total memory = 2277.22 (MB)
+#Peak memory = 2571.35 (MB)
+#
+#start routing for process antenna violation fix ...
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 2277.52 (MB), peak = 2571.35 (MB)
+#
+#Total number of nets with non-default rule or having extra spacing = 209
+#Total wire length = 362342 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 6688 um.
+#Total wire length on LAYER Metal2 = 84086 um.
+#Total wire length on LAYER Metal3 = 104635 um.
+#Total wire length on LAYER Metal4 = 101388 um.
+#Total wire length on LAYER Metal5 = 65544 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 156278
+#Up-Via Summary (total 156278):
+#           
+#-----------------------
+# Metal1          78834
+# Metal2          54177
+# Metal3          17608
+# Metal4           5659
+#-----------------------
+#                156278 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#
+#Total number of nets with non-default rule or having extra spacing = 209
+#Total wire length = 362342 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 6688 um.
+#Total wire length on LAYER Metal2 = 84086 um.
+#Total wire length on LAYER Metal3 = 104635 um.
+#Total wire length on LAYER Metal4 = 101388 um.
+#Total wire length on LAYER Metal5 = 65544 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 156278
+#Up-Via Summary (total 156278):
+#           
+#-----------------------
+# Metal1          78834
+# Metal2          54177
+# Metal3          17608
+# Metal4           5659
+#-----------------------
+#                156278 
+#
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Start Post Route via swapping...
+#99.68% of area are rerouted by ECO routing.
+#   number of violations = 0
+#cpu time = 00:00:09, elapsed time = 00:00:09, memory = 2277.35 (MB), peak = 2571.35 (MB)
+#CELL_VIEW nbit_stack,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0
+#Post Route via swapping is done.
+#Total number of nets with non-default rule or having extra spacing = 209
+#Total wire length = 362342 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 6688 um.
+#Total wire length on LAYER Metal2 = 84086 um.
+#Total wire length on LAYER Metal3 = 104635 um.
+#Total wire length on LAYER Metal4 = 101388 um.
+#Total wire length on LAYER Metal5 = 65544 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 156278
+#Total number of multi-cut vias = 146130 ( 93.5%)
+#Total number of single cut vias = 10148 (  6.5%)
+#Up-Via Summary (total 156278):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1          8338 ( 10.6%)     70496 ( 89.4%)      78834
+# Metal2          1278 (  2.4%)     52899 ( 97.6%)      54177
+# Metal3           437 (  2.5%)     17171 ( 97.5%)      17608
+# Metal4            95 (  1.7%)      5564 ( 98.3%)       5659
+#-----------------------------------------------------------
+#                10148 (  6.5%)    146130 ( 93.5%)     156278 
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Start Post Route wire spreading..
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Start DRC checking..
+#   number of violations = 0
+#cpu time = 00:00:04, elapsed time = 00:00:04, memory = 2277.85 (MB), peak = 2571.35 (MB)
+#CELL_VIEW nbit_stack,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Start data preparation for wire spreading...
+#
+#Data preparation is done on Fri Dec  6 13:00:53 2024
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Start Post Route Wire Spread.
+#Done with 6112 horizontal wires in 6 hboxes and 5805 vertical wires in 6 hboxes.
+#Complete Post Route Wire Spread.
+#
+#Total number of nets with non-default rule or having extra spacing = 209
+#Total wire length = 366523 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 6700 um.
+#Total wire length on LAYER Metal2 = 84528 um.
+#Total wire length on LAYER Metal3 = 105867 um.
+#Total wire length on LAYER Metal4 = 103070 um.
+#Total wire length on LAYER Metal5 = 66358 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 156278
+#Total number of multi-cut vias = 146130 ( 93.5%)
+#Total number of single cut vias = 10148 (  6.5%)
+#Up-Via Summary (total 156278):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1          8338 ( 10.6%)     70496 ( 89.4%)      78834
+# Metal2          1278 (  2.4%)     52899 ( 97.6%)      54177
+# Metal3           437 (  2.5%)     17171 ( 97.5%)      17608
+# Metal4            95 (  1.7%)      5564 ( 98.3%)       5659
+#-----------------------------------------------------------
+#                10148 (  6.5%)    146130 ( 93.5%)     156278 
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.080.
+#Voltage range [0.000 - 1.080] has 30845 nets.
+#Voltage range [1.080 - 1.080] has 1 net.
+#Voltage range [0.000 - 0.000] has 1 net.
+#
+#Start DRC checking..
+#   number of violations = 0
+#cpu time = 00:00:04, elapsed time = 00:00:04, memory = 2278.63 (MB), peak = 2571.35 (MB)
+#CELL_VIEW nbit_stack,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0
+#   number of violations = 0
+#cpu time = 00:00:06, elapsed time = 00:00:06, memory = 2278.63 (MB), peak = 2571.35 (MB)
+#CELL_VIEW nbit_stack,init has no DRC violation.
+#Total number of DRC violations = 0
+#Total number of process antenna violations = 0
+#Total number of net violated process antenna rule = 0
+#Post Route wire spread is done.
+#Total number of nets with non-default rule or having extra spacing = 209
+#Total wire length = 366523 um.
+#Total half perimeter of net bounding box = 346223 um.
+#Total wire length on LAYER Metal1 = 6700 um.
+#Total wire length on LAYER Metal2 = 84528 um.
+#Total wire length on LAYER Metal3 = 105867 um.
+#Total wire length on LAYER Metal4 = 103070 um.
+#Total wire length on LAYER Metal5 = 66358 um.
+#Total wire length on LAYER Metal6 = 0 um.
+#Total wire length on LAYER Metal7 = 0 um.
+#Total wire length on LAYER Metal8 = 0 um.
+#Total wire length on LAYER Metal9 = 0 um.
+#Total wire length on LAYER Metal10 = 0 um.
+#Total wire length on LAYER Metal11 = 0 um.
+#Total number of vias = 156278
+#Total number of multi-cut vias = 146130 ( 93.5%)
+#Total number of single cut vias = 10148 (  6.5%)
+#Up-Via Summary (total 156278):
+#                   single-cut          multi-cut      Total
+#-----------------------------------------------------------
+# Metal1          8338 ( 10.6%)     70496 ( 89.4%)      78834
+# Metal2          1278 (  2.4%)     52899 ( 97.6%)      54177
+# Metal3           437 (  2.5%)     17171 ( 97.5%)      17608
+# Metal4            95 (  1.7%)      5564 ( 98.3%)       5659
+#-----------------------------------------------------------
+#                10148 (  6.5%)    146130 ( 93.5%)     156278 
+#
+#detailRoute Statistics:
+#Cpu time = 00:01:04
+#Elapsed time = 00:01:04
+#Increased memory = 23.36 (MB)
+#Total memory = 2275.38 (MB)
+#Peak memory = 2571.35 (MB)
+#
+#globalDetailRoute statistics:
+#Cpu time = 00:01:27
+#Elapsed time = 00:01:28
+#Increased memory = 58.91 (MB)
+#Total memory = 2263.24 (MB)
+#Peak memory = 2571.35 (MB)
+#Number of warnings = 2
+#Total number of warnings = 151
+#Number of fails = 0
+#Total number of fails = 0
+#Complete globalDetailRoute on Fri Dec  6 13:01:00 2024
+#
+% End globalDetailRoute (date=12/06 13:01:00, total cpu=0:01:27, real=0:01:28, peak res=2393.9M, current mem=2261.8M)
+**WARN: (IMPDC-2614):	Cannot invoke the command -siAware true option of set_delay_cal_mode command with Encounter_Digital_Impl_Sys_L license. This feature requires an Encounter_Digital_Impl_Sys_XL or equivalent license. Update the license file or remove the option from the command. Skipped -siAware true option.
+#Default setup view is reset to nbit_stack_view_setup.
+#Default setup view is reset to nbit_stack_view_setup.
+AAE_INFO: Post Route call back at the end of routeDesign
+#routeDesign: cpu time = 00:01:37, elapsed time = 00:01:38, memory = 2242.07 (MB), peak = 2571.35 (MB)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-3530          1  The process node is not set. Use the com...
+WARNING   IMPDC-2614          19  Cannot invoke the command -siAware true ...
+WARNING   NRIG-1303            1  The congestion map does not match the GC...
+WARNING   NRIF-38              1  Option %s%s is not a Boolean option.     
+WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+WARNING   TCLCMD-1403          1  '%s'                                     
+*** Message Summary: 25 warning(s), 0 error(s)
+

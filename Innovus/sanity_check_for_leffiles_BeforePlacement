@@ -1,0 +1,11 @@
+**WARN: (IMPREPO-205):	There are 2 Cells with missing PG PIN.
+**WARN: (IMPREPO-207):	There are 1 Cells dimensions not multiple integer of site.
+Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-205          1  There are %d Cells with missing PG PIN.  
+WARNING   IMPREPO-207          1  There are %d Cells dimensions not multip...
+*** Message Summary: 2 warning(s), 0 error(s)
+

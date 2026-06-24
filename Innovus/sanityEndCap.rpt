@@ -1,0 +1,5 @@
+
+******Begin verifyEndCap******
+**ERROR: (IMPVFW-405):	There is no specified end cap cell type for verifyEndCap. Use setEndCapMode to specify the end cap cell types.
+******End verifyEndCap******
+**WARN: (IMPVFW-5):	verifyEndCap is not completed.

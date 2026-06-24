@@ -1,0 +1,231 @@
+*** placeDesign #1 [begin] : totSession cpu/real = 0:00:19.2/0:01:26.9 (0.2), mem = 2358.1M
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 1243 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.4) ***
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+Set Default Input Pin Transition as 1 ps.
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.1790710 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+AAE DB initialization (MEM=2317.93 CPU=0:00:00.0 REAL=0:00:00.0) 
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: nbit_stack
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=2317.93)
+siFlow : Timing analysis mode is single, using late cdB files
+Total number of fetched objects 24459
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=2385.14 CPU=0:00:00.5 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2385.14 CPU=0:00:00.7 REAL=0:00:01.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Input Pin Transition as 0.1 ps.
+Set Default Net Load as 0.5 pF. 
+**INFO: Pre-place timing setting for timing analysis already disabled
+Deleted 0 physical inst  (cell - / prefix -).
+Did not delete 2030 physical insts as they were marked preplaced.
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#2 (mem=2367.6M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.0 mem=2375.6M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.0 mem=2375.6M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 18658 (76.3%) nets
+3		: 3549 (14.5%) nets
+4     -	14	: 2089 (8.5%) nets
+15    -	39	: 120 (0.5%) nets
+40    -	79	: 28 (0.1%) nets
+80    -	159	: 10 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 4 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 1 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=26476 (2030 fixed + 24446 movable) #buf cell=0 #inv cell=1052 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=24459 #term=72353 #term/net=2.96, #fixedIo=23, #floatIo=0, #fixedPin=0, #floatPin=23
+stdCell: 26476 single + 0 double + 0 multi
+Total standard cell length = 25.7660 (mm), area = 0.0441 (mm^2)
+Average module density = 0.707.
+Density for the design = 0.707.
+       = stdcell_area 124770 sites (42671 um^2) / alloc_area 176465 sites (60351 um^2).
+Pin Density = 0.4008.
+            = total # of pins 72353 / total area 180525.
+=== lastAutoLevel = 8 
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 1.082e+04 (6.06e+03 4.76e+03)
+              Est.  stn bbox = 1.433e+04 (8.31e+03 6.02e+03)
+              cpu = 0:00:00.1 real = 0:00:01.0 mem = 2447.9M
+Iteration  2: Total net bbox = 1.082e+04 (6.06e+03 4.76e+03)
+              Est.  stn bbox = 1.433e+04 (8.31e+03 6.02e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2447.9M
+Iteration  3: Total net bbox = 1.011e+04 (5.11e+03 5.00e+03)
+              Est.  stn bbox = 1.500e+04 (7.89e+03 7.11e+03)
+              cpu = 0:00:00.6 real = 0:00:00.0 mem = 2507.9M
+Active setup views:
+    nbit_stack_view_setup
+Iteration  4: Total net bbox = 1.966e+05 (1.06e+05 9.06e+04)
+              Est.  stn bbox = 2.462e+05 (1.31e+05 1.15e+05)
+              cpu = 0:00:02.3 real = 0:00:03.0 mem = 2508.0M
+Iteration  5: Total net bbox = 1.737e+05 (8.97e+04 8.40e+04)
+              Est.  stn bbox = 2.321e+05 (1.19e+05 1.13e+05)
+              cpu = 0:00:02.4 real = 0:00:02.0 mem = 2508.1M
+Iteration  6: Total net bbox = 1.636e+05 (8.39e+04 7.97e+04)
+              Est.  stn bbox = 2.240e+05 (1.14e+05 1.10e+05)
+              cpu = 0:00:02.3 real = 0:00:02.0 mem = 2531.9M
+
+Iteration  7: Total net bbox = 1.715e+05 (9.08e+04 8.07e+04)
+              Est.  stn bbox = 2.320e+05 (1.21e+05 1.11e+05)
+              cpu = 0:00:00.2 real = 0:00:01.0 mem = 2567.7M
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+Iteration  8: Total net bbox = 1.748e+05 (9.26e+04 8.23e+04)
+              Est.  stn bbox = 2.355e+05 (1.23e+05 1.12e+05)
+              cpu = 0:00:02.2 real = 0:00:02.0 mem = 2567.7M
+Iteration  9: Total net bbox = 1.827e+05 (9.61e+04 8.66e+04)
+              Est.  stn bbox = 2.419e+05 (1.26e+05 1.16e+05)
+              cpu = 0:00:03.3 real = 0:00:03.0 mem = 2567.7M
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+Iteration 10: Total net bbox = 1.829e+05 (9.62e+04 8.67e+04)
+              Est.  stn bbox = 2.422e+05 (1.26e+05 1.16e+05)
+              cpu = 0:00:02.1 real = 0:00:02.0 mem = 2567.7M
+Iteration 11: Total net bbox = 2.019e+05 (1.06e+05 9.63e+04)
+              Est.  stn bbox = 2.599e+05 (1.35e+05 1.25e+05)
+              cpu = 0:00:03.4 real = 0:00:04.0 mem = 2567.7M
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+Iteration 12: Total net bbox = 2.039e+05 (1.07e+05 9.72e+04)
+              Est.  stn bbox = 2.623e+05 (1.36e+05 1.26e+05)
+              cpu = 0:00:02.1 real = 0:00:02.0 mem = 2567.7M
+Iteration 13: Total net bbox = 2.201e+05 (1.14e+05 1.06e+05)
+              Est.  stn bbox = 2.768e+05 (1.43e+05 1.34e+05)
+              cpu = 0:00:04.7 real = 0:00:04.0 mem = 2567.7M
+Iteration 14: Total net bbox = 2.201e+05 (1.14e+05 1.06e+05)
+              Est.  stn bbox = 2.768e+05 (1.43e+05 1.34e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2567.7M
+Iteration 15: Total net bbox = 2.201e+05 (1.14e+05 1.06e+05)
+              Est.  stn bbox = 2.768e+05 (1.43e+05 1.34e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2567.7M
+*** cost = 2.201e+05 (1.14e+05 1.06e+05) (cpu for global=0:00:26.2) real=0:00:27.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/7
+Solver runtime cpu: 0:00:18.2 real: 0:00:18.3
+Core Placement runtime cpu: 0:00:19.2 real: 0:00:21.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:00:48.0 mem=2567.7M) ***
+Total net bbox length = 2.201e+05 (1.139e+05 1.062e+05) (ext = 1.828e+03)
+Move report: Detail placement moves 24446 insts, mean move: 1.14 um, max move: 49.73 um 
+	Max move on inst (g386678): (151.11, 200.67) --> (151.00, 151.05)
+	Runtime: CPU: 0:00:01.6 REAL: 0:00:02.0 MEM: 2535.7MB
+Summary Report:
+Instances move: 24446 (out of 24446 movable)
+Instances flipped: 0
+Mean displacement: 1.14 um
+Max displacement: 49.73 um (Instance: g386678) (151.109, 200.671) -> (151, 151.05)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: NAND2X1
+Total net bbox length = 2.137e+05 (1.095e+05 1.042e+05) (ext = 1.816e+03)
+Runtime: CPU: 0:00:01.6 REAL: 0:00:02.0 MEM: 2535.7MB
+*** Finished refinePlace (0:00:49.6 mem=2535.7M) ***
+*** End of Placement (cpu=0:00:28.7, real=0:00:30.0, mem=2445.7M) ***
+default core: bins with density > 0.750 =  9.33 % ( 21 / 225 )
+Density distribution unevenness ratio = 1.882%
+*** Free Virtual Timing Model ...(mem=2461.7M)
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF. 
+**INFO: Analyzing IO path groups for slack adjustment
+Effort level <high> specified for reg2reg_tmp.1790710 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: nbit_stack
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=2452.23)
+Total number of fetched objects 24459
+AAE_INFO: Total number of nets for which stage creation was skipped for all views 0
+End delay calculation. (MEM=2495.45 CPU=0:00:00.5 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2495.45 CPU=0:00:00.7 REAL=0:00:01.0)
+**INFO: Disable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 24459 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] Layer group 1: route 24459 net(s) in layer range [2, 5]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.01% V. EstWL: 2.734923e+05um
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.01% V
+Early Global Route congestion estimation runtime: 0.09 seconds, mem = 2493.9M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR]                  Length (um)    Vias 
+[NR-eGR] -------------------------------------
+[NR-eGR]  Metal1   (1H)             0   72353 
+[NR-eGR]  Metal2   (2V)         85687   94264 
+[NR-eGR]  Metal3   (3H)        114135    7206 
+[NR-eGR]  Metal4   (4V)         59459    2010 
+[NR-eGR]  Metal5   (5H)         28963       0 
+[NR-eGR]  Metal6   (6V)             0       0 
+[NR-eGR]  Metal7   (7H)             0       0 
+[NR-eGR]  Metal8   (8V)             0       0 
+[NR-eGR]  Metal9   (9H)             0       0 
+[NR-eGR]  Metal10  (10V)            0       0 
+[NR-eGR]  Metal11  (11H)            0       0 
+[NR-eGR] -------------------------------------
+[NR-eGR]           Total       288244  175833 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 213698um
+[NR-eGR] Total length: 288244um, number of vias: 175833
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 12427um, number of vias: 9766
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.14 seconds, mem = 2468.9M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.3, real=0:00:01.0)
+*** Finishing placeDesign default flow ***
+***** Total cpu  0:0:32
+***** Total real time  0:0:34
+**placeDesign ... cpu = 0: 0:32, real = 0: 0:34, mem = 2452.9M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-1760           7  Buffer footprint does not have non-inver...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+*** Message Summary: 10 warning(s), 0 error(s)
+
+*** placeDesign #1 [finish] : cpu/real = 0:00:32.1/0:00:33.2 (1.0), totSession cpu/real = 0:00:51.2/0:02:00.0 (0.4), mem = 2452.9M

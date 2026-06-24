@@ -1,0 +1,1 @@
+/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/InputFiles/nbit_stack_map.sdc

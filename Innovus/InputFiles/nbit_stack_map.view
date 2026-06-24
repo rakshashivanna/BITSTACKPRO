@@ -1,0 +1,17 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name nbit_stack_rc_corner -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0} -qx_tech_file {/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch} 
+
+create_library_set -name nbit_stack_slowLib -timing {/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib}
+
+#Post_Synthesis_SDC dumped from genus tool, Also increase the clock period and pulse width with 50% duty cycle in sdc, inorder for design to have some positive slack in pnR stage
+create_constraint_mode -name common -sdc_files {/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/InputFiles/nbit_stack_map.sdc}
+
+create_delay_corner -name nbit_stack_delayCorner -library_set {nbit_stack_slowLib} -rc_corner {nbit_stack_rc_corner}
+
+
+create_analysis_view -name nbit_stack_view_hold -constraint_mode {common} -delay_corner {nbit_stack_delayCorner}
+
+create_analysis_view -name nbit_stack_view_setup -constraint_mode {common} -delay_corner {nbit_stack_delayCorner}
+
+set_analysis_view -setup {nbit_stack_view_setup} -hold {nbit_stack_view_hold}

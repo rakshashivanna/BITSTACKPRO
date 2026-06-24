@@ -1,0 +1,53 @@
+[12/01 20:30:32      0s] 
+[12/01 20:30:32      0s] Cadence Innovus(TM) Implementation System.
+[12/01 20:30:32      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/01 20:30:32      0s] 
+[12/01 20:30:32      0s] Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+[12/01 20:30:32      0s] Options:	
+[12/01 20:30:32      0s] Date:		Sun Dec  1 20:30:32 2024
+[12/01 20:30:32      0s] Host:		ece-rh810-8 (x86_64 w/Linux 5.15.0-126-generic) (20cores*28cpus*Intel(R) Core(TM) i7-14700K 33792KB)
+[12/01 20:30:32      0s] OS:		CentOS Linux 7 (Core)
+[12/01 20:30:32      0s] 
+[12/01 20:30:32      0s] License:
+[12/01 20:30:33      0s] 		[20:30:33.179033] Configured Lic search path (21.01-s002): 27432@police.ceas1.uc.edu
+
+[12/01 20:30:33      0s] 		invs	Innovus Implementation System	21.1	Denied
+[12/01 20:30:33      0s] 		invsb	Innovus Implementation System Basic	21.1	Denied
+[12/01 20:30:33      0s] 		fexl	First Encounter XL	21.1	Denied
+[12/01 20:30:33      0s] 		vdixl	Virtuoso Digital Implementation XL	21.1	Denied
+[12/01 20:30:33      0s] 		vdi	Virtuoso Digital Implementation	21.1	checkout succeeded
+[12/01 20:30:33      0s] 		Maximum number of instances allowed (1 x 50000).
+[12/01 20:30:48      7s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.19-s058_1 (64bit) 04/04/2024 09:59 (Linux 3.10.0-693.el7.x86_64)
+[12/01 20:30:49      8s] @(#)CDS: NanoRoute 21.19-s058_1 NR231113-0413/21_19-UB (database version 18.20.605) {superthreading v2.17}
+[12/01 20:30:49      8s] @(#)CDS: AAE 21.19-s004 (64bit) 04/04/2024 (Linux 3.10.0-693.el7.x86_64)
+[12/01 20:30:49      8s] @(#)CDS: CTE 21.19-s010_1 () Mar 27 2024 01:55:37 ( )
+[12/01 20:30:49      8s] @(#)CDS: SYNTECH 21.19-s002_1 () Sep  6 2023 22:17:00 ( )
+[12/01 20:30:49      8s] @(#)CDS: CPE v21.19-s026
+[12/01 20:30:49      8s] @(#)CDS: IQuantus/TQuantus 21.1.1-s966 (64bit) Wed Mar 8 10:22:20 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[12/01 20:30:49      8s] @(#)CDS: OA 22.60-p087 Thu Feb  9 09:35:26 2023
+[12/01 20:30:49      8s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[12/01 20:30:49      8s] @(#)CDS: RCDB 11.15.0
+[12/01 20:30:49      8s] @(#)CDS: STYLUS 21.12-s019_1 (12/20/2022 05:13 PST)
+[12/01 20:30:49      8s] @(#)CDS: SystemPlanner-21.18-10439 (21.18) (2023-03-01 15:40:03+0800)
+[12/01 20:30:49      8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_3271273_ece-rh810-8_shivansa_KL9YZ5.
+
+[12/01 20:30:49      8s] Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+[12/01 20:30:53     10s] 
+[12/01 20:30:53     10s] **INFO:  MMMC transition support version v31-84 
+[12/01 20:30:53     10s] 
+[12/01 20:30:53     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/01 20:30:53     10s] <CMD> suppressMessage ENCEXT-2799
+[12/01 20:30:53     10s] <CMD> win
+[12/01 20:49:24     78s] couldn't read file "../PowerPlanning.tcl": no such file or directory
+[12/01 20:51:05     84s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Dec  1 20:51:05 2024
+  Total CPU time:     0:01:25
+  Total real time:    0:20:37
+  Peak memory (main): 932.36MB
+
+[12/01 20:51:05     84s] 
+[12/01 20:51:05     84s] *** Memory Usage v#1 (Current mem = 1117.281M, initial mem = 486.375M) ***
+[12/01 20:51:05     84s] *** Message Summary: 0 warning(s), 0 error(s)
+[12/01 20:51:05     84s] 
+[12/01 20:51:05     84s] --- Ending "Innovus" (totcpu=0:01:25, real=0:20:33, mem=1117.3M) ---

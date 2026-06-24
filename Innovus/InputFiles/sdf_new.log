@@ -1,0 +1,57 @@
+======================================================================
+
+Annotating SDF timing data:
+  Compiled SDF file:     nbit_stack_map.sdf.X
+  Log file:              sdf_new.log
+  Backannotation scope:  testbench.stack
+  Configuration file:    
+  MTM control:           MAXIMUM
+  Scale factors:         
+  Scale type:            
+
+Time units: 1ps
+
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\scan_out_reg[1]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 261736>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\scan_out_reg[2]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 261754>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\scan_out_reg[3]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 261772>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\scan_out_reg[0]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 261790>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\data_out_reg[0]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 261808>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\data_out_reg[1]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 261826>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\data_out_reg[2]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 261844>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\data_out_reg[3]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 261862>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\scan_reg_data_out_reg[0]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316280>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\scan_reg_data_out_reg[1]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316298>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\scan_reg_data_out_reg[2]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316316>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\scan_reg_data_out_reg[3]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316334>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[0]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316352>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[1]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316370>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[2]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316388>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[3]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316406>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[4]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316424>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[5]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316442>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[6]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316460>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[7]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316478>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[8]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316496>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[9]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316514>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[10]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316532>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[11]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316550>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[12]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316568>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[13]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316586>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[14]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316604>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[15]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316622>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[16]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316640>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[17]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316658>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[18]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316676>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[19]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316694>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[20]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316712>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[21]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316730>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[22]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316748>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[23]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316766>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[24]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316784>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[25]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316802>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[26]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316820>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[27]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316838>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[28]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316856>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[29]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316874>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[30]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316892>.
+xmelab: *W,SDFNET: Unable to annotate to non-existent timing check (RECREM (posedge RN) (posedge CK) (-44) (54)) of instance testbench.stack.\sp_reg[31]  of module DFFRHQX1 <./nbit_stack_map.sdf, line 316910>.

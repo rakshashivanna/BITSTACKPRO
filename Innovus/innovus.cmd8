@@ -1,0 +1,72 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Dec  2 12:08:22 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.19-s058_1 (64bit) 04/04/2024 09:59 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.19-s058_1 NR231113-0413/21_19-UB (database version 18.20.605) {superthreading v2.17}
+#@(#)CDS: AAE 21.19-s004 (64bit) 04/04/2024 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.19-s010_1 () Mar 27 2024 01:55:37 ( )
+#@(#)CDS: SYNTECH 21.19-s002_1 () Sep  6 2023 22:17:00 ( )
+#@(#)CDS: CPE v21.19-s026
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s966 (64bit) Wed Mar 8 10:22:20 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+win
+encMessage warning 0
+encMessage debug 0
+is_common_ui_mode
+restoreDesign /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat nbit_stack
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+set_ccopt_property -target_skew 0.007
+set_ccopt_property -target_max_trans 0.1
+set_ccopt_property inverter_cells {CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8}
+set_ccopt_property buffer_cells {BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8}
+setOptMode -usefulSkew true
+create_ccopt_clock_tree_spec -file NBIT_STACK_CTS.spec
+get_ccopt_clock_trees
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property cts_is_sdc_clock_root -pin clk true
+create_ccopt_clock_tree -name clk -source clk -no_skew_group
+set_ccopt_property clock_period -pin clk 0.976
+set_ccopt_property timing_connectivity_info {}
+create_ccopt_skew_group -name clk/common -sources clk -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk/common true
+set_ccopt_property extracted_from_clock_name -skew_group clk/common clk
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk/common common
+set_ccopt_property extracted_from_delay_corners -skew_group clk/common nbit_stack_delayCorner
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/CTS_Report.rpt
+reportCongestion -trialRoute
+reportCongestion -trialRoute
+timeDesign -postCTS -slackReports -drvReports -outDir /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/TimingReport_Setup.rpt
+timeDesign -postCTS -hold -outDir /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/TimingReport_Hold.rpt
+report_area > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/PDArea.rpt
+report_power > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/PDPower.rpt
+group_path -name r2r -from [all_registers] -to [all_register]
+group_path -name r2o -from [all_registers] -to [all_outputs]
+group_path -name i2r -from [all_inputs] -to [all_registers]
+group_path -name i2o -from [all_inputs] -to [all_outputs]
+report_timing -late -path_group r2r -max_paths  20000  > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/r2r_setup.rpt
+report_timing -late -path_group r2o -max_paths  20000  > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/r2o_setup.rpt
+report_timing -late -path_group i2r -max_paths  20000  > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/i2r_setup.rpt
+report_timing -late -path_group i2o -max_paths  20000  > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/i2o_setup.rpt
+report_timing -early -path_group r2r -max_paths  20000  > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/r2r_hold.rpt
+report_timing -early -path_group r2o -max_paths  20000  > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/r2o_hold.rpt
+report_timing -early -path_group i2r -max_paths  20000  > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/i2r_hold.rpt
+report_timing -early -path_group i2o -max_paths  20000  > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/i2o_hold.rpt
+report_ccopt_skew_groups -summary
+get_ccopt_clock_tree_cells * -node_types buffer
+get_ccopt_clock_tree_cells * -node_types inverter
+verify_PG_short > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/pgshort.rpt
+verify_connectivity -allPGPinPort > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/connectivity.rpt
+verify_drc > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/drc.rpt
+saveNetlist /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/CTS/NBIT_STACK_Netlist.v
+selectInst CTS_ccl_a_buf_00028
+deselectInst CTS_ccl_a_buf_00028

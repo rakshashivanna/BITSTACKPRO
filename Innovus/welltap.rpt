@@ -1,0 +1,2 @@
+**WARN: (IMPSP-9102):	The value of -rule in set_well_tap_mode should be set to half of the value of -cellInterval, unless it's used in some special purpose, otherwise it will cause incremental insertion behave unexpectedly.
+For 1740 new insts, Inserted 1740 well-taps <FILL2> cells (prefix WELLTAP).

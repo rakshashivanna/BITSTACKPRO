@@ -1,0 +1,19 @@
+ *** Starting VERIFY PG SHORT(MEM: 2956.6) ***
+
+  VERIFY PG SHORT ...... Initializing
+  VERIFY PG SHORT ...... Deleting Existing Violations
+  VERIFY PG SHORT ...... Creating Sub-Areas
+                  ...... bin size: 1920
+  VERIFY PG SHORT ...... SubArea : 1 of 4
+  VERIFY PG SHORT ...... Short:  484 Viols.
+  VERIFY PG SHORT ...... SubArea : 2 of 4
+  VERIFY PG SHORT ...... Short:  1085 Viols.
+  VERIFY PG SHORT ...... SubArea : 3 of 4
+  VERIFY PG SHORT ...... Short:  345 Viols.
+  VERIFY PG SHORT ...... SubArea : 4 of 4
+  VERIFY PG SHORT ...... Short:  539 Viols.
+  Verification Complete : 2453 Short Viols.
+
+**********End: VERIFY PG SHORT**********
+ *** verify PG short (CPU: 0:00:01.5  MEM: 382.3M)
+

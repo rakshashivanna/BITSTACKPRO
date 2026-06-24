@@ -1,0 +1,1556 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+Options:	
+Date:		Mon Dec  2 12:28:16 2024
+Host:		ece-rh810-8 (x86_64 w/Linux 5.15.0-126-generic) (20cores*28cpus*Intel(R) Core(TM) i7-14700K 33792KB)
+OS:		CentOS Linux 7 (Core)
+
+License:
+		[12:28:16.179105] Configured Lic search path (21.01-s002): 27432@police.ceas1.uc.edu
+
+		invs	Innovus Implementation System	21.1	Denied
+		invsb	Innovus Implementation System Basic	21.1	Denied
+		fexl	First Encounter XL	21.1	Denied
+		vdixl	Virtuoso Digital Implementation XL	21.1	Denied
+		vdi	Virtuoso Digital Implementation	21.1	checkout succeeded
+		Maximum number of instances allowed (1 x 50000).
+Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat nbit_stack
+#% Begin load design ... (date=12/02 12:29:47, mem=935.2M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'nbit_stack' saved by 'Innovus' '21.19-s058_1' on 'Mon Dec 2 04:12:48 2024'.
+% Begin Load MMMC data ... (date=12/02 12:29:47, mem=939.1M)
+% End Load MMMC data ... (date=12/02 12:29:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=940.0M, current mem=940.0M)
+nbit_stack_rc_corner
+
+Loading LEF file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/libs/lef/gsclib045_tech.lef ...
+
+Loading LEF file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/libs/lef/gsclib045_macro.lef ...
+Set DBUPerIGU to M2 pitch 400.
+
+Loading LEF file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/libs/lef/gsclib045_multibitsDFF.lef ...
+**WARN: (IMPLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-58' for more detail.
+**WARN: (IMPLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+Type 'man IMPLF-61' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDD' in macro 'SDFF4RX2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSS' in macro 'SDFF4RX2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VDD' in macro 'SDFF4RX1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'VSS' in macro 'SDFF4RX1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/viewDefinition.tcl
+Reading nbit_stack_slowLib timing library '/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib' ...
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+Read 489 cells in library 'slow_vdd1v2' 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=25.5M, fe_cpu=0.27min, fe_real=1.52min, fe_mem=1164.9M) ***
+% Begin Load netlist data ... (date=12/02 12:29:47, mem=959.8M)
+*** Begin netlist parsing (mem=1164.9M) ***
+Created 489 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1172.902M, initial mem = 486.375M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1172.9M) ***
+% End Load netlist data ... (date=12/02 12:29:47, total cpu=0:00:00.0, real=0:00:00.0, peak res=973.9M, current mem=973.9M)
+Set top cell to nbit_stack.
+Hooked 489 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell nbit_stack ...
+*** Netlist is unique.
+** info: there are 584 modules.
+** info: there are 24096 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1232.316M, initial mem = 486.375M) ***
+*info: set bottom ioPad orient R0
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Loading preference file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+Slack adjustment of -0 applied on reg2reg path_group
+Slack adjustment of -0 applied on <default> path group
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+**WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
+**WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+Total number of combinational cells: 318
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+Total number of usable buffers: 16
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of usable inverters: 19
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of identified usable delay cells: 8
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+Reading floorplan file - /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.fp.gz (mem = 1492.8M).
+% Begin Load floorplan data ... (date=12/02 12:29:48, mem=1282.5M)
+*info: reset 24108 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 443200 438900)
+**WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+ ... processed partition successfully.
+Reading binary special route file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.fp.spr.gz (Created by Innovus v21.19-s058_1 on Mon Dec  2 04:12:47 2024, version: 1)
+Convert 0 swires and 0 svias from compressed groups
+2 swires and 0 svias were compressed
+2 swires and 0 svias were decompressed from small or sparse groups
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1284.1M, current mem=1284.1M)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=12/02 12:29:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1284.9M, current mem=1284.9M)
+% Begin Load SymbolTable ... (date=12/02 12:29:48, mem=1285.2M)
+Reading congestion map file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.route.congmap.gz ...
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=12/02 12:29:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1288.0M, current mem=1288.0M)
+Loading place ...
+% Begin Load placement data ... (date=12/02 12:29:48, mem=1288.0M)
+Reading placement file - /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.19-s058_1 on Mon Dec  2 04:12:48 2024, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Checked 4 GNC rules.
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1498.8M) ***
+Total net length = 1.825e+05 (9.089e+04 9.157e+04) (ext = 3.778e+03)
+% End Load placement data ... (date=12/02 12:29:48, total cpu=0:00:00.0, real=0:00:00.0, peak res=1293.2M, current mem=1292.1M)
+Reading PG file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.pg.gz, version#2, (Created by Innovus v21.19-s058_1 on       Mon Dec  2 04:12:48 2024)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1495.8M) ***
+% Begin Load routing data ... (date=12/02 12:29:48, mem=1292.9M)
+Reading routing file - /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.route.gz.
+Reading Innovus routing data (Created by Innovus v21.19-s058_1 on Mon Dec  2 04:12:48 2024 Format: 20.1) ...
+*** Total 24108 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:01.0 mem=1518.8M) ***
+% End Load routing data ... (date=12/02 12:29:49, total cpu=0:00:00.1, real=0:00:01.0, peak res=1317.3M, current mem=1316.5M)
+Loading Drc markers ...
+... 256 markers are loaded ...
+... 0 geometry drc markers are loaded ...
+... 0 antenna drc markers are loaded ...
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1522.8M) ***
+Set Default Input Pin Transition as 0.1 ps.
+Loading preRoute extraction data from directory '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/extraction/' ...
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+Generating auto layer map file.
+Loading preRoute extracted patterns from file '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/nbit_stack.techData.gz' ...
+Completed (cpu: 0:00:00.3 real: 0:00:00.0)
+Set Shrink Factor to 1.00000
+Summary of Active RC-Corners : 
+ 
+ Analysis View: nbit_stack_view_setup
+    RC-Corner Name        : nbit_stack_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/libs/mmmc/nbit_stack_rc_corner/gpdk045.tch'
+ 
+ Analysis View: nbit_stack_view_hold
+    RC-Corner Name        : nbit_stack_rc_corner
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : ''
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+    RC-Corner Technology file: '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/libs/mmmc/nbit_stack_rc_corner/gpdk045.tch'
+Restored RC grid for preRoute extraction.
+Initializing multi-corner resistance tables ...
+Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=12/02 12:29:49, mem=1362.8M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=12/02 12:29:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=1369.9M, current mem=1369.9M)
+nbit_stack_delayCorner
+% Begin load AAE data ... (date=12/02 12:29:49, mem=1392.6M)
+AAE DB initialization (MEM=1624.39 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=12/02 12:29:50, total cpu=0:00:00.3, real=0:00:01.0, peak res=1402.8M, current mem=1402.8M)
+Total number of combinational cells: 318
+Total number of sequential cells: 152
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+Total number of physical cells: 9
+List of usable buffers:
+Total number of usable buffers: 0
+List of unusable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+Total number of unusable buffers: 24
+List of usable inverters: INVX1
+Total number of usable inverters: 1
+List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+Total number of unusable inverters: 18
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=12/02 12:29:50, total cpu=0:00:02.3, real=0:00:03.0, peak res=1423.8M, current mem=1402.0M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-58            16  MACRO '%s' has been found in the databas...
+WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+WARNING   IMPLF-200            5  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPPTN-867           2  Found use of %s. This will continue to w...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   NRIF-91              1  Option setNanoRouteMode -routeTopRouting...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
+WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+*** Message Summary: 42 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> addEndCap -coreBoundaryOnly -preCap FILL2 -postCap FILL2 -prefix ENDCAP > EndCap.rpt
+**WARN: (IMPSP-5224):	Option '-preCap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -rightEdge cell_name'. 
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+**WARN: (IMPSP-5224):	Option '-postcap' for command addEndCap is obsolete and has been replaced by 'setEndCapMode -leftEdge cell_name'. 
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, 
+update your script to use 'setEndCapMode -rightEdge cell_name' and 'addEndCap'.
+**WARN: (IMPSP-5534):	'setEndCapMode -leftEdge' and 'setEndCapMode -rightEdge' are using the same endcap cells
+**WARN: (IMPSP-5534):	'setEndCapMode -leftBottomCorner' and 'setEndCapMode -rightBottomCorner' are using the same endcap cells
+**WARN: (IMPSP-5534):	'setEndCapMode -leftTopCorner' and 'setEndCapMode -rightTopCorner' are using the same endcap cells
+Estimated cell power/ground rail width = 0.160 um
+Minimum row-size in sites for endcap insertion = 5.
+Minimum number of sites for row blockage       = 1.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 1.140).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 1.140).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 2.850).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 2.850).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 4.560).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 4.560).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 6.270).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 6.270).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 7.980).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 7.980).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 9.690).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 9.690).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 11.400).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 11.400).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 13.110).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 13.110).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 14.820).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 14.820).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Pre-cap cell (FILL2) at (1.000, 16.530).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (IMPSP-5119):	AddEndCap is unable to add Post-cap cell (FILL2) at (220.200, 16.530).
+Type 'man IMPSP-5119' for more detail.
+**WARN: (EMS-27):	Message (IMPSP-5119) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Inserted 0 pre-endcap <FILL2> cells (prefix ENDCAP).
+Inserted 0 post-endcap <FILL2> cells (prefix ENDCAP).
+**ERROR: (IMPSP-5106):	AddEndCap cannot place end cap cells at the ends of the site rows. Most probably there are pre-placed std-cell insts at 'start' of 'some' rows. Remove pre-placed instances and re-run addEndCap again.
+Type 'man IMPSP-5106' for more detail.
+**ERROR: (IMPSP-5106):	AddEndCap cannot place end cap cells at the ends of the site rows. Most probably there are pre-placed std-cell insts at 'end' of 'some' rows. Remove pre-placed instances and re-run addEndCap again.
+Type 'man IMPSP-5106' for more detail.
+For 0 new insts, *** Applied 0 GNC rules.
+<CMD> set_well_tap_mode -rule 100
+<CMD> addWellTap -cell FILL2 -cellInterval 20 -fixedGap -prefix WELLTAP > welltap.rpt
+**WARN: (IMPSP-9102):	The value of -rule in set_well_tap_mode should be set to half of the value of -cellInterval, unless it's used in some special purpose, otherwise it will cause incremental insertion behave unexpectedly.
+For 0 new insts, *** Applied 0 GNC rules.
+Inserted 0 well-tap  <FILL2> cells (prefix WELLTAP).
+<CMD> verifyEndCap > sanityEndCap.rpt
+
+******Begin verifyEndCap******
+**ERROR: (IMPVFW-405):	There is no specified end cap cell type for verifyEndCap. Use setEndCapMode to specify the end cap cell types.
+******End verifyEndCap******
+**WARN: (IMPVFW-5):	verifyEndCap is not completed.
+<CMD> verifyWellTap -rule 20 -cell FILL2 > sanityWellTap.rpt
+Begin to run verifyWellTap...
+init: done
+checking rule
+Finished verifyWellTap, 0 violations found.
+<CMD> checkDesign -netlist > sanity_check_for_netlist_BeforePlacement
+############################################################################
+# Innovus Netlist Design Rule Check
+# Mon Dec  2 12:30:05 2024
+############################################################################
+Design: nbit_stack
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 25620
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 42989.06
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 25620
+Number of Non-uniquified Insts : 25620
+Number of Nets                 : 24108
+Average number of Pins per Net : 2.95
+Maximum number of Pins in Net  : 3377
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 17
+Number of Input Ports          : 10
+Number of Output Ports         : 7
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 17
+**WARN: (IMPREPO-202):	There are 17 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 0
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[833][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[833][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[833][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[833][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[832][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[832][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[832][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[832][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[831][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[831][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[831][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[831][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[830][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[830][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[830][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[830][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[829][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[829][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[829][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[829][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (EMS-27):	Message (IMPDB-2136) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Number of Input/InOut Floating Pins            : 3336
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-218):	There are 3336 Floating Instance terminals.
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 0
+Number of High Fanout nets (>50)               : 34
+**WARN: (IMPREPO-227):	There are 34 High Fanout nets (>50).
+Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDB-2136        3336  %s term '%s' of %s instance '%s' does no...
+WARNING   IMPREPO-227          1  There are %d High Fanout nets (>50).     
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-218          1  There are %d Floating Instance terminals...
+*** Message Summary: 3339 warning(s), 0 error(s)
+
+<CMD> checkDesign -physicalLibrary > sanity_check_for_leffiles_BeforePlacement
+**WARN: (IMPREPO-205):	There are 2 Cells with missing PG PIN.
+**WARN: (IMPREPO-207):	There are 1 Cells dimensions not multiple integer of site.
+Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-205          1  There are %d Cells with missing PG PIN.  
+WARNING   IMPREPO-207          1  There are %d Cells dimensions not multip...
+*** Message Summary: 2 warning(s), 0 error(s)
+
+<CMD> checkDesign -timingLibrary > sanity_check_for_libfiles_BeforePlacement
+Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> check_timing > sanity_check_for_timing_BeforePlacement
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: nbit_stack
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Extraction called for design 'nbit_stack' of instances=25620 and nets=24108 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design nbit_stack.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using Quantus QRC technology file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 1821.484M)
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=1889.35)
+siFlow : Timing analysis mode is single, using late cdB files
+Total number of fetched objects 24106
+End delay calculation. (MEM=2034.48 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2034.48 CPU=0:00:00.9 REAL=0:00:01.0)
+<CMD> checkDesign -floorplan > sanity_check_for_floorplan_BeforePlacement
+Checking routing tracks.....
+Checking other grids.....
+Checking routing blockage.....
+Checking components.....
+Checking constraints (guide/region/fence).....
+Checking groups.....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> setRouteMode -earlyGlobalMaxRouteLayer 5
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+<CMD> setPinAssignMode -maxLayer 5
+**WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
+<CMD> setNanoRouteMode -routeTopRoutingLayer 5
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+<CMD> setDesignMode -topRoutingLayer Metal5
+**WARN: (IMPSYT-21024):	Command "setMaxRouteLayer" has become obsolete. It will be removed in the next release and is replaced by "setDesignMode -topRoutingLayer". The obsolete command still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your scripts.
+<CMD> getPlaceMode -place_hierarchical_flow -quiet
+<CMD> report_message -start_cmd
+<CMD> getRouteMode -maxRouteLayer -quiet
+<CMD> getRouteMode -user -maxRouteLayer
+<CMD> getPlaceMode -place_global_place_io_pins -quiet
+<CMD> getPlaceMode -user -maxRouteLayer
+<CMD> getPlaceMode -quiet -adaptiveFlowMode
+<CMD> getPlaceMode -timingDriven -quiet
+<CMD> getPlaceMode -adaptive -quiet
+<CMD> getPlaceMode -relaxSoftBlockageMode -quiet
+<CMD> getPlaceMode -user -relaxSoftBlockageMode
+<CMD> getPlaceMode -ignoreScan -quiet
+<CMD> getPlaceMode -user -ignoreScan
+<CMD> getPlaceMode -repairPlace -quiet
+<CMD> getPlaceMode -user -repairPlace
+<CMD> getPlaceMode -inPlaceOptMode -quiet
+<CMD> getPlaceMode -quiet -bypassFlowEffortHighChecking
+<CMD> getPlaceMode -quiet -place_global_exp_enable_3d
+*** placeDesign #1 [begin] : totSession cpu/real = 0:00:20.4/0:01:49.4 (0.2), mem = 2026.5M
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> um::push_snapshot_stack
+<CMD> getDesignMode -quiet -flowEffort
+<CMD> getDesignMode -highSpeedCore -quiet
+<CMD> getPlaceMode -quiet -adaptive
+<CMD> set spgFlowInInitialPlace 1
+<CMD> getPlaceMode -sdpAlignment -quiet
+<CMD> getPlaceMode -softGuide -quiet
+<CMD> getPlaceMode -useSdpGroup -quiet
+<CMD> getPlaceMode -sdpAlignment -quiet
+<CMD> getPlaceMode -enableDbSaveAreaPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> getPlaceMode -sdpPlace -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -sdpPlace -quiet
+<CMD> getPlaceMode -groupHighLevelClkGate -quiet
+<CMD_INTERNAL> setvar spgRptErrorForScanConnection 0
+<CMD> getPlaceMode -place_global_exp_allow_missing_scan_chain -quiet
+<CMD> getPlaceMode -place_check_library -quiet
+<CMD> getPlaceMode -trimView -quiet
+<CMD> getPlaceMode -expTrimOptBeforeTDGP -quiet
+<CMD> getPlaceMode -quiet -useNonTimingDeleteBufferTree
+<CMD> getPlaceMode -congEffort -quiet
+<CMD> getPlaceMode -relaxSoftBlockageMode -quiet
+<CMD> getPlaceMode -user -relaxSoftBlockageMode
+<CMD> getPlaceMode -ignoreScan -quiet
+<CMD> getPlaceMode -user -ignoreScan
+<CMD> getPlaceMode -repairPlace -quiet
+<CMD> getPlaceMode -user -repairPlace
+<CMD> getPlaceMode -congEffort -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -timingDriven -quiet
+<CMD> getPlaceMode -user -timingDriven
+<CMD> getPlaceMode -fastFp -quiet
+<CMD> getPlaceMode -clusterMode -quiet
+<CMD> get_proto_model -type_match {flex_module flex_instgroup} -committed -name -tcl
+<CMD> getPlaceMode -inPlaceOptMode -quiet
+<CMD> getPlaceMode -quiet -bypassFlowEffortHighChecking
+<CMD> getPlaceMode -ultraCongEffortFlow -quiet
+<CMD> getPlaceMode -forceTiming -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -fastfp -quiet
+<CMD> getPlaceMode -timingDriven -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -fastfp -quiet
+<CMD> getPlaceMode -powerDriven -quiet
+<CMD> getExtractRCMode -quiet -engine
+<CMD> getAnalysisMode -quiet -clkSrcPath
+<CMD> getAnalysisMode -quiet -clockPropagation
+<CMD> getAnalysisMode -quiet -cppr
+<CMD> setExtractRCMode -engine preRoute
+**WARN: (IMPEXT-3493):	The design extraction status has been reset by set_analysis_view/update_rc_corner or setExtractRCMode  command. The parasitic data can be regenerated either by extracting the design using the extractRC command or by loading the SPEF or RCDB file(s). To prevent resetting of the extraction status, avoid changing extraction modes.
+Type 'man IMPEXT-3493' for more detail.
+<CMD> setAnalysisMode -clkSrcPath false -clockPropagation forcedIdeal
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD_INTERNAL> isAnalysisModeSetup
+<CMD> getPlaceMode -quiet -place_global_exp_solve_unbalance_path
+<CMD> getPlaceMode -quiet -NMPsuppressInfo
+<CMD> getPlaceMode -quiet -place_global_exp_wns_focus_v2
+<CMD> getPlaceMode -quiet -place_incr_exp_isolation_flow
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -quiet -clusterMode
+<CMD> getPlaceMode -wl_budget_mode -quiet
+<CMD> setPlaceMode -reset -place_global_exp_balance_buffer_chain
+<CMD> getPlaceMode -wl_budget_mode -quiet
+<CMD> setPlaceMode -reset -place_global_exp_balance_pipeline
+<CMD> getPlaceMode -place_global_exp_balance_buffer_chain -quiet
+<CMD> getPlaceMode -place_global_exp_balance_pipeline -quiet
+<CMD> getPlaceMode -tdgpMemFlow -quiet
+<CMD> getPlaceMode -user -resetCombineRFLevel
+<CMD> getPlaceMode -quiet -resetCombineRFLevel
+<CMD> setPlaceMode -resetCombineRFLevel 1000
+<CMD_INTERNAL> setvar spgSpeedupBuildVSM 1
+<CMD> getPlaceMode -tdgpResetCteTG -quiet
+<CMD> getPlaceMode -macroPlaceMode -quiet
+<CMD> getPlaceMode -place_global_replace_QP -quiet
+<CMD> getPlaceMode -macroPlaceMode -quiet
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -place_global_ignore_spare -quiet
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -quiet -expNewFastMode
+<CMD> setPlaceMode -expHiddenFastMode 1
+<CMD> setPlaceMode -reset -ignoreScan
+<CMD> getPlaceMode -quiet -place_global_exp_auto_finish_floorplan
+<CMD> getPlaceMode -quiet -IOSlackAdjust
+*** Starting placeDesign default flow ***
+<CMD> getPlaceMode -tdgpCteZeroDelayModeDelBuf -quiet
+<CMD> set_global timing_enable_zero_delay_analysis_mode true
+<CMD> getPlaceMode -quiet -useNonTimingDeleteBufferTree
+<CMD> getPlaceMode -quiet -prePlaceOptSimplifyNetlist
+<CMD> getPlaceMode -quiet -enablePrePlaceOptimizations
+<CMD> getPlaceMode -quiet -prePlaceOptDecloneInv
+<CMD> deleteBufferTree -decloneInv
+*** Start deleteBufferTree ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+
+*summary: 0 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:00.3) ***
+<CMD> getPlaceMode -tdgpCteZeroDelayModeDelBuf -quiet
+<CMD> set_global timing_enable_zero_delay_analysis_mode false
+<CMD> getAnalysisMode -quiet -honorClockDomains
+<CMD> getPlaceMode -honorUserPathGroup -quiet
+<CMD> getAnalysisMode -quiet -honorClockDomains
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+<CMD> set delaycal_use_default_delay_limit 101
+Set Default Net Delay as 0 ps.
+<CMD> set delaycal_default_net_delay 0
+Set Default Net Load as 0 pF. 
+<CMD> set delaycal_default_net_load 0
+<CMD> set delaycal_default_net_load_ignore_for_ilm 0
+<CMD> getAnalysisMode -clkSrcPath -quiet
+<CMD> getAnalysisMode -clockPropagation -quiet
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> buildTimingGraph
+<CMD> getDelayCalMode -ignoreNetLoad -quiet
+<CMD> getDelayCalMode -ignoreNetLoad -quiet
+<CMD> setDelayCalMode -ignoreNetLoad true -quiet
+**INFO: Analyzing IO path groups for slack adjustment
+<CMD> get_global timing_enable_path_group_priority
+<CMD> get_global timing_constraint_enable_group_path_resetting
+<CMD> set_global timing_enable_path_group_priority false
+<CMD> set_global timing_constraint_enable_group_path_resetting false
+<CMD> getOptMode -allowPreCTSClkSrcPaths -quiet
+<CMD> set_global _is_ipo_interactive_path_groups 1
+<CMD> group_path -name in2reg_tmp.3930888 -from {0x3 0x6} -to 0x7 -ignore_source_of_trigger_arc
+<CMD> getOptMode -allowPreCTSClkSrcPaths -quiet
+<CMD> set_global _is_ipo_interactive_path_groups 1
+<CMD> group_path -name in2out_tmp.3930888 -from {0xa 0xd} -to 0xe -ignore_source_of_trigger_arc
+<CMD> set_global _is_ipo_interactive_path_groups 1
+<CMD> group_path -name reg2reg_tmp.3930888 -from 0x10 -to 0x11
+<CMD> set_global _is_ipo_interactive_path_groups 1
+<CMD> group_path -name reg2out_tmp.3930888 -from 0x14 -to 0x15
+<CMD> setPathGroupOptions reg2reg_tmp.3930888 -effortLevel high
+Effort level <high> specified for reg2reg_tmp.3930888 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: nbit_stack
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=2014.96)
+Total number of fetched objects 24106
+End delay calculation. (MEM=2064.63 CPU=0:00:00.5 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2064.63 CPU=0:00:00.7 REAL=0:00:01.0)
+<CMD> reset_path_group -name reg2out_tmp.3930888
+<CMD> set_global _is_ipo_interactive_path_groups 0
+<CMD> reset_path_group -name in2out_tmp.3930888
+<CMD> set_global _is_ipo_interactive_path_groups 0
+**INFO: Disable pre-place timing setting for timing analysis
+<CMD> setDelayCalMode -ignoreNetLoad false
+Set Using Default Delay Limit as 1000.
+<CMD> set delaycal_use_default_delay_limit 1000
+Set Default Net Delay as 1000 ps.
+<CMD> set delaycal_default_net_delay 1000ps
+Set Default Net Load as 0.5 pF. 
+<CMD> set delaycal_default_net_load 0.5pf
+<CMD> set delaycal_default_net_load_ignore_for_ilm 0
+<CMD> all_setup_analysis_views
+<CMD> getPlaceMode -place_global_exp_ignore_low_effort_path_groups -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getAnalysisMode -quiet -honorClockDomains
+**INFO: Pre-place timing setting for timing analysis already disabled
+<CMD> getPlaceMode -quiet -place_global_exp_inverter_rewiring
+<CMD> getPlaceMode -ignoreUnproperPowerInit -quiet
+<CMD> getPlaceMode -quiet -expSkipGP
+Deleted 0 physical inst  (cell - / prefix -).
+Did not delete 1524 physical insts as they were marked preplaced.
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+*** Starting "NanoPlace(TM) placement v#2 (mem=2055.1M)" ...
+<CMD> setDelayCalMode -engine feDc
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.0 mem=2063.1M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.0 mem=2063.1M) ***
+No user-set net weight.
+Net fanout histogram:
+2		: 18410 (76.4%) nets
+3		: 3490 (14.5%) nets
+4     -	14	: 2017 (8.4%) nets
+15    -	39	: 143 (0.6%) nets
+40    -	79	: 40 (0.2%) nets
+80    -	159	: 1 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 0 (0.0%) nets
+640   -	1279	: 4 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 1 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: timingDriven clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=25620 (1524 fixed + 24096 movable) #buf cell=0 #inv cell=1116 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=24106 #term=71229 #term/net=2.95, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=17
+stdCell: 25620 single + 0 double + 0 multi
+Total standard cell length = 25.1398 (mm), area = 0.0430 (mm^2)
+Average module density = 0.899.
+Density for the design = 0.899.
+       = stdcell_area 122651 sites (41947 um^2) / alloc_area 136398 sites (46648 um^2).
+Pin Density = 0.5108.
+            = total # of pins 71229 / total area 139446.
+=== lastAutoLevel = 8 
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+Clock gating cells determined by native netlist tracing.
+Iteration  1: Total net bbox = 8.134e+03 (4.92e+03 3.22e+03)
+              Est.  stn bbox = 1.152e+04 (6.97e+03 4.55e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2115.7M
+Iteration  2: Total net bbox = 8.134e+03 (4.92e+03 3.22e+03)
+              Est.  stn bbox = 1.152e+04 (6.97e+03 4.55e+03)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2116.7M
+Iteration  3: Total net bbox = 6.833e+03 (3.81e+03 3.02e+03)
+              Est.  stn bbox = 1.083e+04 (6.09e+03 4.74e+03)
+              cpu = 0:00:00.5 real = 0:00:01.0 mem = 2174.1M
+Active setup views:
+    nbit_stack_view_setup
+Iteration  4: Total net bbox = 1.805e+05 (9.31e+04 8.74e+04)
+              Est.  stn bbox = 2.218e+05 (1.15e+05 1.07e+05)
+              cpu = 0:00:02.3 real = 0:00:02.0 mem = 2174.2M
+Iteration  5: Total net bbox = 1.560e+05 (7.89e+04 7.71e+04)
+              Est.  stn bbox = 2.019e+05 (1.01e+05 1.01e+05)
+              cpu = 0:00:02.4 real = 0:00:03.0 mem = 2174.3M
+Iteration  6: Total net bbox = 1.447e+05 (7.23e+04 7.24e+04)
+              Est.  stn bbox = 1.919e+05 (9.41e+04 9.78e+04)
+              cpu = 0:00:02.3 real = 0:00:02.0 mem = 2197.6M
+<CMD> psp::embedded_egr_init_
+<CMD> psp::embedded_egr_term_
+Iteration  7: Total net bbox = 1.529e+05 (7.94e+04 7.35e+04)
+              Est.  stn bbox = 2.001e+05 (1.01e+05 9.89e+04)
+              cpu = 0:00:00.2 real = 0:00:00.0 mem = 2232.9M
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+Iteration  8: Total net bbox = 1.554e+05 (8.07e+04 7.48e+04)
+              Est.  stn bbox = 2.028e+05 (1.02e+05 1.00e+05)
+              cpu = 0:00:02.3 real = 0:00:02.0 mem = 2232.9M
+<CMD> psp::embedded_egr_init_
+<CMD> psp::embedded_egr_term_
+Iteration  9: Total net bbox = 1.611e+05 (8.36e+04 7.75e+04)
+              Est.  stn bbox = 2.070e+05 (1.04e+05 1.03e+05)
+              cpu = 0:00:03.4 real = 0:00:04.0 mem = 2232.9M
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+**WARN: (IMPSP-1760):	Buffer footprint does not have non-inverting buffers.  Using inverter footprint for Virtual IPO. Verify you have buffers defined in the libraries you have read in and confirm they are usable by running reportDontUseCells. Run 'setDontUse bufferName false' to enable buffers which are currently unusable.  
+Iteration 10: Total net bbox = 1.634e+05 (8.47e+04 7.87e+04)
+              Est.  stn bbox = 2.098e+05 (1.06e+05 1.04e+05)
+              cpu = 0:00:02.2 real = 0:00:02.0 mem = 2232.9M
+Iteration 11: Total net bbox = 1.848e+05 (9.38e+04 9.09e+04)
+              Est.  stn bbox = 2.297e+05 (1.14e+05 1.16e+05)
+              cpu = 0:00:07.3 real = 0:00:07.0 mem = 2232.9M
+Iteration 12: Total net bbox = 1.848e+05 (9.38e+04 9.09e+04)
+              Est.  stn bbox = 2.297e+05 (1.14e+05 1.16e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2232.9M
+Iteration 13: Total net bbox = 1.848e+05 (9.38e+04 9.09e+04)
+              Est.  stn bbox = 2.297e+05 (1.14e+05 1.16e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 2232.9M
+*** cost = 1.848e+05 (9.38e+04 9.09e+04) (cpu for global=0:00:23.2) real=0:00:24.0***
+Info: 0 clock gating cells identified, 0 (on average) moved 0/5
+Solver runtime cpu: 0:00:17.6 real: 0:00:17.6
+Core Placement runtime cpu: 0:00:18.3 real: 0:00:20.0
+<CMD> scanReorder
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+*** Starting refinePlace (0:00:46.4 mem=2232.9M) ***
+Total net bbox length = 1.848e+05 (9.383e+04 9.093e+04) (ext = 1.231e+03)
+Move report: Detail placement moves 24096 insts, mean move: 0.96 um, max move: 41.57 um 
+	Max move on inst (g150): (132.08, 78.09) --> (123.00, 45.60)
+	Runtime: CPU: 0:00:01.9 REAL: 0:00:02.0 MEM: 2200.9MB
+Summary Report:
+Instances move: 24096 (out of 24096 movable)
+Instances flipped: 0
+Mean displacement: 0.96 um
+Max displacement: 41.57 um (Instance: g150) (132.08, 78.0915) -> (123, 45.6)
+	Length: 3 sites, height: 1 rows, site name: CoreSite, cell type: NOR2X1
+Total net bbox length = 1.831e+05 (9.157e+04 9.157e+04) (ext = 1.245e+03)
+Runtime: CPU: 0:00:01.9 REAL: 0:00:02.0 MEM: 2200.9MB
+*** Finished refinePlace (0:00:48.2 mem=2200.9M) ***
+*** End of Placement (cpu=0:00:26.0, real=0:00:27.0, mem=2104.9M) ***
+default core: bins with density > 0.750 = 99.41 % ( 168 / 169 )
+Density distribution unevenness ratio = 1.166%
+*** Free Virtual Timing Model ...(mem=2120.9M)
+<CMD> setDelayCalMode -engine aae
+<CMD> all_setup_analysis_views
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> reset_path_group -name reg2reg_tmp.3930888
+<CMD> set_global _is_ipo_interactive_path_groups 0
+<CMD> reset_path_group -name in2reg_tmp.3930888
+<CMD> set_global _is_ipo_interactive_path_groups 0
+<CMD> set_global timing_enable_path_group_priority $gpsPrivate::optSave_ctePGPriority
+<CMD> set_global timing_constraint_enable_group_path_resetting $gpsPrivate::optSave_ctePGResetting
+<CMD> getPlaceMode -quiet -tdgpAdjustNetWeightBySlack
+<CMD> get_ccopt_clock_trees *
+<CMD> getPlaceMode -exp_insert_guidance_clock_tree -quiet
+<CMD> getPlaceMode -exp_cluster_based_high_fanout_buffering -quiet
+<CMD> getPlaceMode -place_global_exp_incr_skp_preserve_mode_v2 -quiet
+<CMD> getPlaceMode -quiet -place_global_exp_netlist_balance_flow
+<CMD> getPlaceMode -quiet -timingEffort
+<CMD> getAnalysisMode -quiet -honorClockDomains
+<CMD> getPlaceMode -honorUserPathGroup -quiet
+<CMD> getAnalysisMode -quiet -honorClockDomains
+**INFO: Enable pre-place timing setting for timing analysis
+Set Using Default Delay Limit as 101.
+**WARN: (IMPDC-1629):	The default delay limit was set to 101. This is less than the default of 1000 and may result in inaccurate delay calculation for nets with a fanout higher than the setting.  If needed, the default delay limit may be adjusted by running the command 'set delaycal_use_default_delay_limit'.
+<CMD> set delaycal_use_default_delay_limit 101
+Set Default Net Delay as 0 ps.
+<CMD> set delaycal_default_net_delay 0
+Set Default Net Load as 0 pF. 
+<CMD> set delaycal_default_net_load 0
+<CMD> set delaycal_default_net_load_ignore_for_ilm 0
+<CMD> getAnalysisMode -clkSrcPath -quiet
+<CMD> getAnalysisMode -clockPropagation -quiet
+<CMD> getAnalysisMode -checkType -quiet
+<CMD> buildTimingGraph
+<CMD> getDelayCalMode -ignoreNetLoad -quiet
+<CMD> getDelayCalMode -ignoreNetLoad -quiet
+<CMD> setDelayCalMode -ignoreNetLoad true -quiet
+**INFO: Analyzing IO path groups for slack adjustment
+<CMD> get_global timing_enable_path_group_priority
+<CMD> get_global timing_constraint_enable_group_path_resetting
+<CMD> set_global timing_enable_path_group_priority false
+<CMD> set_global timing_constraint_enable_group_path_resetting false
+<CMD> getOptMode -allowPreCTSClkSrcPaths -quiet
+<CMD> set_global _is_ipo_interactive_path_groups 1
+<CMD> group_path -name in2reg_tmp.3930888 -from {0x19 0x1c} -to 0x1d -ignore_source_of_trigger_arc
+<CMD> getOptMode -allowPreCTSClkSrcPaths -quiet
+<CMD> set_global _is_ipo_interactive_path_groups 1
+<CMD> group_path -name in2out_tmp.3930888 -from {0x20 0x23} -to 0x24 -ignore_source_of_trigger_arc
+<CMD> set_global _is_ipo_interactive_path_groups 1
+<CMD> group_path -name reg2reg_tmp.3930888 -from 0x26 -to 0x27
+<CMD> set_global _is_ipo_interactive_path_groups 1
+<CMD> group_path -name reg2out_tmp.3930888 -from 0x2a -to 0x2b
+<CMD> setPathGroupOptions reg2reg_tmp.3930888 -effortLevel high
+Effort level <high> specified for reg2reg_tmp.3930888 path_group
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: nbit_stack
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=2111.4)
+Total number of fetched objects 24106
+End delay calculation. (MEM=2154.61 CPU=0:00:00.5 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2154.61 CPU=0:00:00.7 REAL=0:00:00.0)
+<CMD> reset_path_group -name reg2out_tmp.3930888
+<CMD> set_global _is_ipo_interactive_path_groups 0
+<CMD> reset_path_group -name in2out_tmp.3930888
+<CMD> set_global _is_ipo_interactive_path_groups 0
+**INFO: Disable pre-place timing setting for timing analysis
+<CMD> setDelayCalMode -ignoreNetLoad false
+Set Using Default Delay Limit as 1000.
+<CMD> set delaycal_use_default_delay_limit 1000
+Set Default Net Delay as 1000 ps.
+<CMD> set delaycal_default_net_delay 1000ps
+Set Default Net Load as 0.5 pF. 
+<CMD> set delaycal_default_net_load 0.5pf
+<CMD> set delaycal_default_net_load_ignore_for_ilm 0
+<CMD> all_setup_analysis_views
+<CMD> getPlaceMode -place_global_exp_ignore_low_effort_path_groups -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -quiet -cong_repair_commit_clock_net_route_attr
+<CMD> getPlaceMode -enableDbSaveAreaPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> setPlaceMode -reset -improveWithPsp
+<CMD> getPlaceMode -quiet -debugGlobalPlace
+<CMD> getPlaceMode -congRepair -quiet
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -user -rplaceIncrNPClkGateAwareMode
+<CMD> getPlaceMode -user -congRepairMaxIter
+<CMD> getPlaceMode -quiet -congRepairPDClkGateMode4
+<CMD> setPlaceMode -rplaceIncrNPClkGateAwareMode 4
+<CMD> getPlaceMode -quiet -expCongRepairPDOneLoop
+<CMD> setPlaceMode -congRepairMaxIter 1
+<CMD> getPlaceMode -quickCTS -quiet
+<CMD> get_proto_model -type_match {flex_module flex_instgroup} -committed -name -tcl
+<CMD> getPlaceMode -congRepairForceTrialRoute -quiet
+<CMD> getPlaceMode -user -congRepairForceTrialRoute
+<CMD> setPlaceMode -congRepairForceTrialRoute true
+<CMD> ::goMC::is_advanced_metrics_collection_running
+<CMD> congRepair
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Metal10 has single uniform track structure
+[NR-eGR] Metal11 has single uniform track structure
+[NR-eGR] Read 0 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 0
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 24106 nets ( ignored 0 )
+[NR-eGR] There are 1 clock nets ( 0 with NDR ).
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 24106
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 24106 net(s) in layer range [2, 5]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.05% V. EstWL: 2.295761e+05um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-2)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)        28( 0.17%)   ( 0.17%) 
+[NR-eGR]  Metal3 ( 3)         5( 0.03%)   ( 0.03%) 
+[NR-eGR]  Metal4 ( 4)         2( 0.01%)   ( 0.01%) 
+[NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total        35( 0.05%)   ( 0.05%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.01% H + 0.01% V
+Early Global Route congestion estimation runtime: 0.08 seconds, mem = 2153.1M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR]                  Length (um)    Vias 
+[NR-eGR] -------------------------------------
+[NR-eGR]  Metal1   (1H)             0   71229 
+[NR-eGR]  Metal2   (2V)         66619   89571 
+[NR-eGR]  Metal3   (3H)         90461    9844 
+[NR-eGR]  Metal4   (4V)         57587    2465 
+[NR-eGR]  Metal5   (5H)         29938       0 
+[NR-eGR]  Metal6   (6V)             0       0 
+[NR-eGR]  Metal7   (7H)             0       0 
+[NR-eGR]  Metal8   (8V)             0       0 
+[NR-eGR]  Metal9   (9H)             0       0 
+[NR-eGR]  Metal10  (10V)            0       0 
+[NR-eGR]  Metal11  (11H)            0       0 
+[NR-eGR] -------------------------------------
+[NR-eGR]           Total       244605  173109 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 183137um
+[NR-eGR] Total length: 244605um, number of vias: 173109
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 11313um, number of vias: 9553
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.14 seconds, mem = 2127.1M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.2, real=0:00:00.0)
+<CMD> ::goMC::is_advanced_metrics_collection_running
+<CMD> ::goMC::is_advanced_metrics_collection_running
+<CMD> ::goMC::is_advanced_metrics_collection_running
+<CMD> setPlaceMode -reset -congRepairForceTrialRoute
+<CMD> getPlaceMode -quiet -congRepairPDClkGateMode4
+<CMD> setPlaceMode -reset -rplaceIncrNPClkGateAwareMode
+<CMD> setPlaceMode -reset -congRepairMaxIter
+<CMD> getPlaceMode -congRepairCleanupPadding -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> all_setup_analysis_views
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> reset_path_group -name reg2reg_tmp.3930888
+<CMD> set_global _is_ipo_interactive_path_groups 0
+<CMD> reset_path_group -name in2reg_tmp.3930888
+<CMD> set_global _is_ipo_interactive_path_groups 0
+<CMD> set_global timing_enable_path_group_priority $gpsPrivate::optSave_ctePGPriority
+<CMD> set_global timing_constraint_enable_group_path_resetting $gpsPrivate::optSave_ctePGResetting
+<CMD> getPlaceMode -place_global_exp_incr_skp_preserve_mode_v2 -quiet
+<CMD> getPlaceMode -quiet -place_global_exp_netlist_balance_flow
+<CMD> getPlaceMode -quiet -timingEffort
+<CMD> getPlaceMode -tdgpDumpStageTiming -quiet
+*** Finishing placeDesign default flow ***
+<CMD> getPlaceMode -quiet -tdgpAdjustNetWeightBySlack
+**placeDesign ... cpu = 0: 0:30, real = 0: 0:31, mem = 2115.1M **
+<CMD> getPlaceMode -trimView -quiet
+<CMD> getOptMode -quiet -viewOptPolishing
+<CMD> getOptMode -quiet -fastViewOpt
+<CMD_INTERNAL> spInternalUse deleteViewOptManager
+<CMD_INTERNAL> spInternalUse tdgp clearSkpData
+Tdgp not successfully inited but do clear! skip clearing
+<CMD> setAnalysisMode -clkSrcPath true -clockPropagation forcedIdeal
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> setExtractRCMode -engine preRoute
+<CMD> setPlaceMode -reset -relaxSoftBlockageMode
+<CMD> setPlaceMode -reset -ignoreScan
+<CMD> setPlaceMode -reset -repairPlace
+<CMD> getPlaceMode -quiet -NMPsuppressInfo
+<CMD_INTERNAL> setvar spgSpeedupBuildVSM 0
+<CMD> getPlaceMode -macroPlaceMode -quiet
+<CMD> getPlaceMode -place_global_replace_QP -quiet
+<CMD> getPlaceMode -macroPlaceMode -quiet
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -place_global_ignore_spare -quiet
+<CMD> getPlaceMode -tdgpMemFlow -quiet
+<CMD> setPlaceMode -reset -resetCombineRFLevel
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> getPlaceMode -quiet -clusterMode
+<CMD> getPlaceMode -quiet -place_global_exp_solve_unbalance_path
+<CMD> getPlaceMode -enableDistPlace -quiet
+<CMD> setPlaceMode -reset -expHiddenFastMode
+<CMD> getPlaceMode -tcg2Pass -quiet
+<CMD> getPlaceMode -quiet -wireLenOptEffort
+<CMD> getPlaceMode -fp -quiet
+<CMD> getPlaceMode -fastfp -quiet
+<CMD> getPlaceMode -doRPlace -quiet
+<CMD> getPlaceMode -RTCPlaceDesignFlow -quiet
+<CMD> getPlaceMode -quickCTS -quiet
+<CMD> set spgFlowInInitialPlace 0
+<CMD> getPlaceMode -user -maxRouteLayer
+<CMD_INTERNAL> spInternalUse TDGP resetIgnoreNetLoad
+<CMD> getPlaceMode -place_global_exp_balance_pipeline -quiet
+<CMD> getDesignMode -quiet -flowEffort
+<CMD> report_message -end_cmd
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPEXT-3493          1  The design extraction status has been re...
+WARNING   IMPDC-1629           2  The default delay limit was set to %d. T...
+WARNING   IMPSP-1760           5  Buffer footprint does not have non-inver...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+*** Message Summary: 9 warning(s), 0 error(s)
+
+<CMD> um::create_snapshot -name final -auto min
+<CMD> um::pop_snapshot_stack
+<CMD> um::create_snapshot -name place_design
+*** placeDesign #1 [finish] : cpu/real = 0:00:29.7/0:00:30.8 (1.0), totSession cpu/real = 0:00:50.0/0:02:20.1 (0.4), mem = 2115.1M
+<CMD> getPlaceMode -exp_slack_driven -quiet
+<CMD> checkPlace > checkplace.rpt
+Begin checking placement ... (start mem=2115.1M, init mem=2115.1M)
+*info: Placed = 25620          (Fixed = 1524)
+*info: Unplaced = 0           
+Placement Density:89.92%(41947/46648)
+Placement Density (including fixed std cells):90.14%(42989/47691)
+Finished checkPlace (total: cpu=0:00:00.2, real=0:00:00.0; vio checks: cpu=0:00:00.2, real=0:00:00.0; mem=2115.1M)
+**WARN: (IMPSP-9005):	The command 'describeCongestion' is obsolete.  To check the congestion, use the 'reportCongestion -hotSpot' command.
+Gcells have been grouped into super gcells for coarser sampling.
+There are 4096 that measure horizontal congestion.
+There are 4032 that measure vertical congestion.
+
+Overflow numH           numV
+-------------------------------------
+
+overall congestion index: H 0 (0.00%), V 0 (0.00%)
+<CMD> reportCongestion -overflow
+Usage: (24.1%H 34.5%V) = (1.237e+05um 1.672e+05um) = (72335 97805)
+Overflow: 3 = 1 (0.01% H) + 2 (0.01% V)
+
+Congestion distribution:
+
+Remain	cntH		cntV
+--------------------------------------
+ -2:	0	 0.00%	1	 0.01%
+ -1:	1	 0.01%	1	 0.01%
+--------------------------------------
+  0:	0	 0.00%	18	 0.11%
+  1:	4	 0.02%	15	 0.09%
+  2:	3	 0.02%	39	 0.24%
+  3:	12	 0.07%	65	 0.39%
+  4:	16	 0.10%	162	 0.98%
+  5:	16604	99.78%	16218	98.18%
+<CMD> reportCongestion -hotSpot
+[hotspot] +------------+---------------+---------------+
+[hotspot] |            |   max hotspot | total hotspot |
+[hotspot] +------------+---------------+---------------+
+[hotspot] | normalized |          0.00 |          0.00 |
+[hotspot] +------------+---------------+---------------+
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+<CMD> timeDesign -preCTS -drvReports -slackReports -expandedviews -outDir /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/Placement/PDTiming_timeDesign.rpt
+*** timeDesign #1 [begin] : totSession cpu/real = 0:00:50.2/0:02:20.3 (0.4), mem = 2115.1M
+Start to check current routing status for nets...
+All nets are already routed correctly.
+End to check current routing status for nets (mem=2115.1M)
+Extraction called for design 'nbit_stack' of instances=25620 and nets=24108 using extraction engine 'preRoute' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PreRoute RC Extraction called for design nbit_stack.
+RC Extraction called in multi-corner(1) mode.
+RCMode: PreRoute
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+PreRoute extraction is honoring NDR/Shielding/ExtraSpace for clock nets.
+Using Quantus QRC technology file ...
+Updating RC grid for preRoute extraction ...
+Initializing multi-corner resistance tables ...
+PreRoute RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:00.0  MEM: 2115.098M)
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 0
+#################################################################################
+# Design Stage: PreRoute
+# Design Name: nbit_stack
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI Off 
+#################################################################################
+Calculate delays in Single mode...
+Start delay calculation (fullDC) (1 T). (MEM=2119.12)
+Total number of fetched objects 24106
+End delay calculation. (MEM=2154.33 CPU=0:00:00.7 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=2154.33 CPU=0:00:00.9 REAL=0:00:01.0)
+*** Done Building Timing Graph (cpu=0:00:01.1 real=0:00:01.0 totSessionCpu=0:00:51.7 mem=2154.3M)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ nbit_stack_view_setup 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):| -2.666  | -2.666  | -1.747  |
+|           TNS (ns):| -4410.9 | -4404.9 | -3009.5 |
+|    Violating Paths:|  3372   |  3372   |  3340   |
+|          All Paths:|  3416   |  3376   |  3416   |
++--------------------+---------+---------+---------+
+|nbit_stack_view_setup
+|                    | -2.666  | -2.666  | -1.747  |
+|                    | -4410.9 | -4404.9 | -3009.5 |
+|                    |  3372   |  3372   |  3340   |
+|                    |  3416   |  3376   |  3416   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |    752 (9954)    |   -1.683   |   752 (10095)    |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 89.921%
+Routing Overflow: 0.01% H and 0.01% V
+------------------------------------------------------------------
+Reported timing to dir /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/Placement/PDTiming_timeDesign.rpt
+Total CPU time: 1.91 sec
+Total Real time: 3.0 sec
+Total Memory Usage: 2123.480469 Mbytes
+*** timeDesign #1 [finish] : cpu/real = 0:00:01.9/0:00:02.6 (0.7), totSession cpu/real = 0:00:52.1/0:02:22.9 (0.4), mem = 2123.5M
+<CMD> report_timing > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/Placement/PDTiming_reportTiming.rpt 
+<CMD> report_area > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/Placement/PDArea.rpt
+<CMD> report_power > /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/OutputFiles/Placement/PDPower.rpt
+env CDS_WORKAREA is set to /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus
+
+Power Net Detected:
+        Voltage	    Name
+             0V	    VSS
+          1.08V	    VDD
+Using Power View: nbit_stack_view_setup.
+
+Begin Power Analysis
+
+             0V	    VSS
+          1.08V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Ended Processing Timing Library for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1675.09MB/3546.80MB/1775.56MB)
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1675.48MB/3546.80MB/1775.56MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+clk(1024.59MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1676.62MB/3546.80MB/1775.56MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1676.75MB/3546.80MB/1775.56MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT)
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 10%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 20%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 30%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 40%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 50%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 60%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 70%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 80%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 90%
+
+Finished Levelizing
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT)
+
+Starting Activity Propagation
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT)
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 10%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 20%
+2024-Dec-02 12:30:40 (2024-Dec-02 17:30:40 GMT): 30%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 40%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 50%
+
+Finished Activity Propagation
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT)
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1677.80MB/3546.80MB/1775.56MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT)
+ ... Calculating switching power
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 10%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 20%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 30%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 40%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 50%
+ ... Calculating internal and leakage power
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 60%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 70%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 80%
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT): 90%
+
+Finished Calculating power
+2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT)
+      # of MSMV cell(s) missing power_level: 0
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1678.72MB/3546.80MB/1775.56MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1678.72MB/3546.80MB/1775.56MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:00, mem(process/total/peak)=1678.91MB/3546.80MB/1775.56MB)
+
+Begin Boundary Leakage Calculation
+Ended Boundary Leakage Calculation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1678.91MB/3546.80MB/1775.56MB)
+Begin Static Power Report Generation
+*----------------------------------------------------------------------------------------
+*	Innovus 21.19-s058_1 (64bit) 04/04/2024 09:59 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2024-Dec-02 12:30:41 (2024-Dec-02 17:30:41 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: nbit_stack
+*
+*	Liberty Libraries used:
+*	        nbit_stack_view_setup: /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/Run1/PreCTS.enc.dat/libs/mmmc/slow_vdd1v2_basicCells.lib
+*
+*	Parasitic Files used:
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs
+*
+*       report_power
+*
+-----------------------------------------------------------------------------------------
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:       16.25378583 	   92.0930%
+Total Switching Power:       1.39383820 	    7.8974%
+Total Leakage Power:         0.00168353 	    0.0095%
+Total Power:                17.64930756
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         15.41      0.4188   0.0007503       15.83       89.68
+Macro                                  0           0           0           0           0
+IO                                     0           0           0           0           0
+Combinational                     0.8453       0.975   0.0009333       1.821       10.32
+Clock (Combinational)                  0           0           0           0           0
+Clock (Sequential)                     0           0           0           0           0
+-----------------------------------------------------------------------------------------
+Total                              16.25       1.394    0.001684       17.65         100
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.08      16.25       1.394    0.001684       17.65         100
+ 
+ 
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*              Highest Average Power:          FE_DBTC1_n_29426 (INVX1):          0.00982
+*              Highest Leakage Power:          memory_reg[0][0] (DFFRHQX1):        2.223e-07
+*                Total Cap:      3.46753e-11 F
+*                Total instances in design: 24096
+*                Total instances in design with no power:     0
+*                Total instances in design with no activty:     0
+
+*                Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+ 
+** INFO:  (VOLTUS_POWR-3465): There are 0 decaps and 0 fillers in the design
+
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total/peak)=1686.91MB/3552.05MB/1775.56MB)
+
+<CMD> checkDesign -netlist > sanity_check_for_netlist_AfterPlacement
+############################################################################
+# Innovus Netlist Design Rule Check
+# Mon Dec  2 12:30:41 2024
+############################################################################
+Design: nbit_stack
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 25620
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 42989.06
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 25620
+Number of Non-uniquified Insts : 25620
+Number of Nets                 : 24108
+Average number of Pins per Net : 2.95
+Maximum number of Pins in Net  : 3377
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 17
+Number of Input Ports          : 10
+Number of Output Ports         : 7
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 17
+**WARN: (IMPREPO-202):	There are 17 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 0
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[833][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[833][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[833][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[833][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[832][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[832][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[832][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[832][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[831][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[831][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[831][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[831][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[830][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[830][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[830][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[830][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[829][3]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[829][2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[829][1]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'RN' of  instance 'memory_reg[829][0]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (EMS-27):	Message (IMPDB-2136) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Number of Input/InOut Floating Pins            : 3336
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-218):	There are 3336 Floating Instance terminals.
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 0
+Number of High Fanout nets (>50)               : 34
+**WARN: (IMPREPO-227):	There are 34 High Fanout nets (>50).
+Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDB-2136        3336  %s term '%s' of %s instance '%s' does no...
+WARNING   IMPREPO-227          1  There are %d High Fanout nets (>50).     
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-218          1  There are %d Floating Instance terminals...
+*** Message Summary: 3339 warning(s), 0 error(s)
+
+<CMD> checkDesign -physicalLibrary > sanity_check_for_leffiles_AfterPlacement
+**WARN: (IMPREPO-205):	There are 2 Cells with missing PG PIN.
+**WARN: (IMPREPO-207):	There are 1 Cells dimensions not multiple integer of site.
+Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-205          1  There are %d Cells with missing PG PIN.  
+WARNING   IMPREPO-207          1  There are %d Cells dimensions not multip...
+*** Message Summary: 2 warning(s), 0 error(s)
+
+<CMD> checkDesign -timingLibrary > sanity_check_for_libfiles_AfterPlacement
+Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> check_timing > sanity_check_for_timing_AfterPlacement
+<CMD> checkDesign -floorplan > sanity_check_for_floorplan_AfterPlacement
+Checking routing tracks.....
+Checking other grids.....
+Checking routing blockage.....
+Checking components.....
+Checking constraints (guide/region/fence).....
+Checking groups.....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/nbit_stack.main.htm.ascii
+*** Message Summary: 0 warning(s), 0 error(s)
+
+<CMD> fit
+
+*** Memory Usage v#1 (Current mem = 2219.199M, initial mem = 486.375M) ***
+*** Message Summary: 7001 warning(s), 3 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:56.5, real=0:03:08, mem=2219.2M) ---

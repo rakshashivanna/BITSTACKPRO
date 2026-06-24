@@ -1,0 +1,601 @@
+[12/06 12:43:24      0s] 
+[12/06 12:43:24      0s] Cadence Innovus(TM) Implementation System.
+[12/06 12:43:24      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[12/06 12:43:24      0s] 
+[12/06 12:43:24      0s] Version:	v21.19-s058_1, built Thu Apr 4 09:59:17 PDT 2024
+[12/06 12:43:24      0s] Options:	
+[12/06 12:43:24      0s] Date:		Fri Dec  6 12:43:24 2024
+[12/06 12:43:24      0s] Host:		ece-rh810-8 (x86_64 w/Linux 5.15.0-126-generic) (20cores*28cpus*Intel(R) Core(TM) i7-14700K 33792KB)
+[12/06 12:43:24      0s] OS:		CentOS Linux 7 (Core)
+[12/06 12:43:24      0s] 
+[12/06 12:43:24      0s] License:
+[12/06 12:43:24      0s] 		[12:43:24.179073] Configured Lic search path (21.01-s002): 27432@police.ceas1.uc.edu
+
+[12/06 12:43:24      0s] 		invs	Innovus Implementation System	21.1	Denied
+[12/06 12:43:24      0s] 		invsb	Innovus Implementation System Basic	21.1	Denied
+[12/06 12:43:24      0s] 		fexl	First Encounter XL	21.1	Denied
+[12/06 12:43:24      0s] 		vdixl	Virtuoso Digital Implementation XL	21.1	Denied
+[12/06 12:43:24      0s] 		vdi	Virtuoso Digital Implementation	21.1	checkout succeeded
+[12/06 12:43:24      0s] 		Maximum number of instances allowed (1 x 50000).
+[12/06 12:43:34      7s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.19-s058_1 (64bit) 04/04/2024 09:59 (Linux 3.10.0-693.el7.x86_64)
+[12/06 12:43:35      8s] @(#)CDS: NanoRoute 21.19-s058_1 NR231113-0413/21_19-UB (database version 18.20.605) {superthreading v2.17}
+[12/06 12:43:35      8s] @(#)CDS: AAE 21.19-s004 (64bit) 04/04/2024 (Linux 3.10.0-693.el7.x86_64)
+[12/06 12:43:35      8s] @(#)CDS: CTE 21.19-s010_1 () Mar 27 2024 01:55:37 ( )
+[12/06 12:43:35      8s] @(#)CDS: SYNTECH 21.19-s002_1 () Sep  6 2023 22:17:00 ( )
+[12/06 12:43:35      8s] @(#)CDS: CPE v21.19-s026
+[12/06 12:43:35      8s] @(#)CDS: IQuantus/TQuantus 21.1.1-s966 (64bit) Wed Mar 8 10:22:20 PST 2023 (Linux 3.10.0-693.el7.x86_64)
+[12/06 12:43:35      8s] @(#)CDS: OA 22.60-p087 Thu Feb  9 09:35:26 2023
+[12/06 12:43:35      8s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[12/06 12:43:35      8s] @(#)CDS: RCDB 11.15.0
+[12/06 12:43:35      8s] @(#)CDS: STYLUS 21.12-s019_1 (12/20/2022 05:13 PST)
+[12/06 12:43:35      8s] @(#)CDS: SystemPlanner-21.18-10439 (21.18) (2023-03-01 15:40:03+0800)
+[12/06 12:43:35      8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1787756_ece-rh810-8_shivansa_m3QWV7.
+
+[12/06 12:43:35      8s] Change the soft stacksize limit to 0.2%RAM (127 mbytes). Set global soft_stack_size_limit to change the value.
+[12/06 12:43:37      9s] 
+[12/06 12:43:37      9s] **INFO:  MMMC transition support version v31-84 
+[12/06 12:43:37      9s] 
+[12/06 12:43:37      9s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[12/06 12:43:37      9s] <CMD> suppressMessage ENCEXT-2799
+[12/06 12:43:37      9s] <CMD> win
+[12/06 12:44:35     13s] <CMD> encMessage warning 0
+[12/06 12:44:35     13s] Suppress "**WARN ..." messages.
+[12/06 12:44:35     13s] <CMD> encMessage debug 0
+[12/06 12:44:35     13s] <CMD> is_common_ui_mode
+[12/06 12:44:35     13s] <CMD> restoreDesign /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat nbit_stack
+[12/06 12:44:36     13s] #% Begin load design ... (date=12/06 12:44:36, mem=939.3M)
+[12/06 12:44:36     13s] Set Default Input Pin Transition as 0.1 ps.
+[12/06 12:44:36     13s] Loading design 'nbit_stack' saved by 'Innovus' '21.19-s058_1' on 'Fri Dec 6 04:14:47 2024'.
+[12/06 12:44:36     13s] % Begin Load MMMC data ... (date=12/06 12:44:36, mem=943.0M)
+[12/06 12:44:36     13s] % End Load MMMC data ... (date=12/06 12:44:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=944.0M, current mem=944.0M)
+[12/06 12:44:36     13s] 
+[12/06 12:44:36     13s] Loading LEF file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/libs/lef/gsclib045_tech.lef ...
+[12/06 12:44:36     13s] 
+[12/06 12:44:36     13s] Loading LEF file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/libs/lef/gsclib045_macro.lef ...
+[12/06 12:44:36     13s] Set DBUPerIGU to M2 pitch 400.
+[12/06 12:44:36     13s] 
+[12/06 12:44:36     13s] Loading LEF file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/libs/lef/gsclib045_multibitsDFF.lef ...
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'DFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'DFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'DFF2X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'DFF2X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'DFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'DFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'DFF4X1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'DFF4X2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'SDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'SDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'SDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'SDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'SPDFF2RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'SPDFF2RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'SPDFF4RX1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-58):	MACRO 'SPDFF4RX2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data, and certain properties, will be ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-58' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-61):	16 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data, and certain properties, have been ignored.
+[12/06 12:44:36     13s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[12/06 12:44:36     13s] Type 'man IMPLF-61' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-200):	Pin 'VDD' in macro 'SDFF4RX2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 12:44:36     13s] Type 'man IMPLF-200' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-200):	Pin 'VSS' in macro 'SDFF4RX2' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 12:44:36     13s] Type 'man IMPLF-200' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-200):	Pin 'VDD' in macro 'SDFF4RX1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 12:44:36     13s] Type 'man IMPLF-200' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-200):	Pin 'VSS' in macro 'SDFF4RX1' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 12:44:36     13s] Type 'man IMPLF-200' for more detail.
+[12/06 12:44:36     13s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[12/06 12:44:36     13s] Type 'man IMPLF-200' for more detail.
+[12/06 12:44:36     13s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[12/06 12:44:36     13s] Loading view definition file from /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/viewDefinition.tcl
+[12/06 12:44:36     13s] Reading nbit_stack_slowLib timing library '/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib' ...
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP9'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP8'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP7'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP6'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP5'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP4'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP3'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP2'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'DECAP10'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     13s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib)
+[12/06 12:44:36     14s] Read 489 cells in library 'slow_vdd1v2' 
+[12/06 12:44:36     14s] Ending "PreSetAnalysisView" (total cpu=0:00:00.2, real=0:00:00.0, peak res=1009.0M, current mem=963.7M)
+[12/06 12:44:36     14s] *** End library_loading (cpu=0.00min, real=0.00min, mem=22.5M, fe_cpu=0.23min, fe_real=1.20min, fe_mem=1167.0M) ***
+[12/06 12:44:36     14s] % Begin Load netlist data ... (date=12/06 12:44:36, mem=963.8M)
+[12/06 12:44:36     14s] *** Begin netlist parsing (mem=1167.0M) ***
+[12/06 12:44:36     14s] Created 489 new cells from 1 timing libraries.
+[12/06 12:44:36     14s] Reading netlist ...
+[12/06 12:44:36     14s] Backslashed names will retain backslash and a trailing blank character.
+[12/06 12:44:36     14s] Reading verilogBinary netlist '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.v.bin'
+[12/06 12:44:36     14s] 
+[12/06 12:44:36     14s] *** Memory Usage v#1 (Current mem = 1177.043M, initial mem = 486.375M) ***
+[12/06 12:44:36     14s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1177.0M) ***
+[12/06 12:44:36     14s] % End Load netlist data ... (date=12/06 12:44:36, total cpu=0:00:00.0, real=0:00:00.0, peak res=977.7M, current mem=977.7M)
+[12/06 12:44:36     14s] Set top cell to nbit_stack.
+[12/06 12:44:36     14s] Hooked 489 DB cells to tlib cells.
+[12/06 12:44:36     14s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=985.8M, current mem=985.8M)
+[12/06 12:44:36     14s] Starting recursive module instantiation check.
+[12/06 12:44:36     14s] No recursion found.
+[12/06 12:44:36     14s] Building hierarchical netlist for Cell nbit_stack ...
+[12/06 12:44:36     14s] *** Netlist is unique.
+[12/06 12:44:36     14s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[12/06 12:44:36     14s] ** info: there are 584 modules.
+[12/06 12:44:36     14s] ** info: there are 24446 stdCell insts.
+[12/06 12:44:36     14s] 
+[12/06 12:44:36     14s] *** Memory Usage v#1 (Current mem = 1236.457M, initial mem = 486.375M) ***
+[12/06 12:44:36     14s] *info: set bottom ioPad orient R0
+[12/06 12:44:36     14s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/06 12:44:36     14s] Type 'man IMPFP-3961' for more detail.
+[12/06 12:44:36     14s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/06 12:44:36     14s] Type 'man IMPFP-3961' for more detail.
+[12/06 12:44:36     14s] Start create_tracks
+[12/06 12:44:36     14s] Loading preference file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/gui.pref.tcl ...
+[12/06 12:44:36     14s] **WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+[12/06 12:44:36     14s] Type 'man IMPOPT-3602' for more detail.
+[12/06 12:44:36     14s] Effort level <high> specified for reg2reg path_group
+[12/06 12:44:36     14s] Slack adjustment of -0 applied on reg2reg path_group
+[12/06 12:44:36     14s] Slack adjustment of -0 applied on <default> path group
+[12/06 12:44:36     14s] #WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+[12/06 12:44:36     14s] **WARN: (IMPPTN-867):	Found use of setPinAssignMode -maxLayer. This will continue to work in this release; however, it is recommended to use setDesignMode -topRoutingLayer instead.
+[12/06 12:44:36     14s] addRing command will ignore shorts while creating rings.
+[12/06 12:44:36     14s] addRing command will disallow rings to go over rows.
+[12/06 12:44:36     14s] addRing command will consider rows while creating rings.
+[12/06 12:44:36     14s] The ring targets are set to core/block ring wires.
+[12/06 12:44:36     14s] **WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+[12/06 12:44:36     14s] Change floorplan default-technical-site to 'CoreSite'.
+[12/06 12:44:37     14s] Extraction setup Delayed 
+[12/06 12:44:37     14s] *Info: initialize multi-corner CTS.
+[12/06 12:44:37     14s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1275.6M, current mem=1025.3M)
+[12/06 12:44:37     14s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/06 12:44:37     14s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[12/06 12:44:37     14s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[12/06 12:44:37     14s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[12/06 12:44:37     14s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[12/06 12:44:37     14s] Summary for sequential cells identification: 
+[12/06 12:44:37     14s]   Identified SBFF number: 104
+[12/06 12:44:37     14s]   Identified MBFF number: 0
+[12/06 12:44:37     14s]   Identified SB Latch number: 0
+[12/06 12:44:37     14s]   Identified MB Latch number: 0
+[12/06 12:44:37     14s]   Not identified SBFF number: 16
+[12/06 12:44:37     14s]   Not identified MBFF number: 0
+[12/06 12:44:37     14s]   Not identified SB Latch number: 0
+[12/06 12:44:37     14s]   Not identified MB Latch number: 0
+[12/06 12:44:37     14s]   Number of sequential cells which are not FFs: 32
+[12/06 12:44:37     14s] Total number of combinational cells: 318
+[12/06 12:44:37     14s] Total number of sequential cells: 152
+[12/06 12:44:37     14s] Total number of tristate cells: 10
+[12/06 12:44:37     14s] Total number of level shifter cells: 0
+[12/06 12:44:37     14s] Total number of power gating cells: 0
+[12/06 12:44:37     14s] Total number of isolation cells: 0
+[12/06 12:44:37     14s] Total number of power switch cells: 0
+[12/06 12:44:37     14s] Total number of pulse generator cells: 0
+[12/06 12:44:37     14s] Total number of always on buffers: 0
+[12/06 12:44:37     14s] Total number of retention cells: 0
+[12/06 12:44:37     14s] Total number of physical cells: 9
+[12/06 12:44:37     14s] List of usable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8
+[12/06 12:44:37     14s] Total number of usable buffers: 16
+[12/06 12:44:37     14s] List of unusable buffers:
+[12/06 12:44:37     14s] Total number of unusable buffers: 0
+[12/06 12:44:37     14s] List of usable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX1 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[12/06 12:44:37     14s] Total number of usable inverters: 19
+[12/06 12:44:37     14s] List of unusable inverters:
+[12/06 12:44:37     14s] Total number of unusable inverters: 0
+[12/06 12:44:37     14s] List of identified usable delay cells: DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[12/06 12:44:37     14s] Total number of identified usable delay cells: 8
+[12/06 12:44:37     14s] List of identified unusable delay cells:
+[12/06 12:44:37     14s] Total number of identified unusable delay cells: 0
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] TimeStamp Deleting Cell Server Begin ...
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] TimeStamp Deleting Cell Server End ...
+[12/06 12:44:37     14s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1284.9M, current mem=1284.8M)
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign Begin ...
+[12/06 12:44:37     14s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[12/06 12:44:37     14s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[12/06 12:44:37     14s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[12/06 12:44:37     14s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[12/06 12:44:37     14s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[12/06 12:44:37     14s] Summary for sequential cells identification: 
+[12/06 12:44:37     14s]   Identified SBFF number: 104
+[12/06 12:44:37     14s]   Identified MBFF number: 0
+[12/06 12:44:37     14s]   Identified SB Latch number: 0
+[12/06 12:44:37     14s]   Identified MB Latch number: 0
+[12/06 12:44:37     14s]   Not identified SBFF number: 16
+[12/06 12:44:37     14s]   Not identified MBFF number: 0
+[12/06 12:44:37     14s]   Not identified SB Latch number: 0
+[12/06 12:44:37     14s]   Not identified MB Latch number: 0
+[12/06 12:44:37     14s]   Number of sequential cells which are not FFs: 32
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] Trim Metal Layers:
+[12/06 12:44:37     14s]  Visiting view : nbit_stack_view_setup
+[12/06 12:44:37     14s]    : PowerDomain = none : Weighted F : unweighted  = 22.70 (1.000) with rcCorner = 0
+[12/06 12:44:37     14s]    : PowerDomain = none : Weighted F : unweighted  = 12.20 (1.000) with rcCorner = -1
+[12/06 12:44:37     14s]  Visiting view : nbit_stack_view_hold
+[12/06 12:44:37     14s]    : PowerDomain = none : Weighted F : unweighted  = 22.70 (1.000) with rcCorner = 0
+[12/06 12:44:37     14s]    : PowerDomain = none : Weighted F : unweighted  = 12.20 (1.000) with rcCorner = -1
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) in restoreDesign End ...
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] TimeStamp Deleting Cell Server Begin ...
+[12/06 12:44:37     14s] 
+[12/06 12:44:37     14s] TimeStamp Deleting Cell Server End ...
+[12/06 12:44:37     14s] Reading floorplan file - /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.fp.gz (mem = 1497.9M).
+[12/06 12:44:37     14s] % Begin Load floorplan data ... (date=12/06 12:44:37, mem=1286.4M)
+[12/06 12:44:37     14s] *info: reset 24461 existing net BottomPreferredLayer and AvoidDetour
+[12/06 12:44:37     14s] Deleting old partition specification.
+[12/06 12:44:37     14s] Set FPlanBox to (0 0 514000 514900)
+[12/06 12:44:37     14s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/06 12:44:37     14s] Type 'man IMPFP-3961' for more detail.
+[12/06 12:44:37     14s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+[12/06 12:44:37     14s] Type 'man IMPFP-3961' for more detail.
+[12/06 12:44:37     14s] Start create_tracks
+[12/06 12:44:37     14s]  ... processed partition successfully.
+[12/06 12:44:37     14s] Reading binary special route file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.fp.spr.gz (Created by Innovus v21.19-s058_1 on Fri Dec  6 04:14:46 2024, version: 1)
+[12/06 12:44:37     14s] Convert 0 swires and 0 svias from compressed groups
+[12/06 12:44:37     14s] 16 swires and 34 svias were compressed
+[12/06 12:44:37     14s] 16 swires and 34 svias were decompressed from small or sparse groups
+[12/06 12:44:37     14s] Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1287.9M, current mem=1287.9M)
+[12/06 12:44:37     14s] Extracting standard cell pins and blockage ...... 
+[12/06 12:44:37     14s] Pin and blockage extraction finished
+[12/06 12:44:37     14s] % End Load floorplan data ... (date=12/06 12:44:37, total cpu=0:00:00.1, real=0:00:00.0, peak res=1288.7M, current mem=1288.7M)
+[12/06 12:44:37     14s] Reading congestion map file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.route.congmap.gz ...
+[12/06 12:44:37     14s] % Begin Load SymbolTable ... (date=12/06 12:44:37, mem=1289.0M)
+[12/06 12:44:37     14s] routingBox: (0 0) (514000 514900)
+[12/06 12:44:37     14s] coreBox:    (8000 7980) (506000 506920)
+[12/06 12:44:37     14s] Un-suppress "**WARN ..." messages.
+[12/06 12:44:37     14s] % End Load SymbolTable ... (date=12/06 12:44:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=1292.3M, current mem=1292.3M)
+[12/06 12:44:37     14s] Loading place ...
+[12/06 12:44:37     14s] % Begin Load placement data ... (date=12/06 12:44:37, mem=1292.3M)
+[12/06 12:44:37     14s] Reading placement file - /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.place.gz.
+[12/06 12:44:37     14s] ** Reading stdCellPlacement_binary (Created by Innovus v21.19-s058_1 on Fri Dec  6 04:14:46 2024, version# 2) ...
+[12/06 12:44:37     14s] Read Views for adaptive view pruning ...
+[12/06 12:44:37     14s] Read 0 views from Binary DB for adaptive view pruning
+[12/06 12:44:37     14s] *** Checked 4 GNC rules.
+[12/06 12:44:37     14s] *** applyConnectGlobalNets disabled.
+[12/06 12:44:37     14s] *** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=1504.0M) ***
+[12/06 12:44:37     14s] Total net length = 2.137e+05 (1.095e+05 1.042e+05) (ext = 4.977e+03)
+[12/06 12:44:37     14s] % End Load placement data ... (date=12/06 12:44:37, total cpu=0:00:00.0, real=0:00:00.0, peak res=1297.6M, current mem=1296.5M)
+[12/06 12:44:37     14s] Reading PG file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.pg.gz, version#2, (Created by Innovus v21.19-s058_1 on       Fri Dec  6 04:14:46 2024)
+[12/06 12:44:37     14s] *** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1501.0M) ***
+[12/06 12:44:37     14s] % Begin Load routing data ... (date=12/06 12:44:37, mem=1297.2M)
+[12/06 12:44:37     14s] Reading routing file - /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.route.gz.
+[12/06 12:44:37     14s] Reading Innovus routing data (Created by Innovus v21.19-s058_1 on Fri Dec  6 04:14:47 2024 Format: 20.1) ...
+[12/06 12:44:37     14s] *** Total 24461 nets are successfully restored.
+[12/06 12:44:37     14s] *** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=1525.0M) ***
+[12/06 12:44:37     14s] % End Load routing data ... (date=12/06 12:44:37, total cpu=0:00:00.1, real=0:00:00.0, peak res=1322.3M, current mem=1321.2M)
+[12/06 12:44:37     14s] TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+[12/06 12:44:37     14s] Reading property file /home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.prop
+[12/06 12:44:37     14s] *** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1529.0M) ***
+[12/06 12:44:37     14s] Set Default Input Pin Transition as 0.1 ps.
+[12/06 12:44:38     14s] Loading preRoute extraction data from directory '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/extraction/' ...
+[12/06 12:44:38     14s] Restore PreRoute RC Grid meta data successful.
+[12/06 12:44:38     14s] Extraction setup Started 
+[12/06 12:44:38     14s] 
+[12/06 12:44:38     14s] Trim Metal Layers:
+[12/06 12:44:38     14s] Initializing multi-corner RC extraction with 1 active RC Corners ...
+[12/06 12:44:38     14s] Captable file(s) not specified in multi-corner setup. PreRoute extraction will use technology file. For postRoute extraction, default value for effort level would be 'medium' and effort level 'low' would not be allowed.
+[12/06 12:44:38     14s] __QRC_SADV_USE_LE__ is set 0
+[12/06 12:44:38     15s] Metal Layer Id 1 is Metal1 
+[12/06 12:44:38     15s] Metal Layer Id 2 is Metal2 
+[12/06 12:44:38     15s] Metal Layer Id 3 is Metal3 
+[12/06 12:44:38     15s] Metal Layer Id 4 is Metal4 
+[12/06 12:44:38     15s] Metal Layer Id 5 is Metal5 
+[12/06 12:44:38     15s] Metal Layer Id 6 is Metal6 
+[12/06 12:44:38     15s] Metal Layer Id 7 is Metal7 
+[12/06 12:44:38     15s] Metal Layer Id 8 is Metal8 
+[12/06 12:44:38     15s] Metal Layer Id 9 is Metal9 
+[12/06 12:44:38     15s] Metal Layer Id 10 is Metal10 
+[12/06 12:44:38     15s] Metal Layer Id 11 is Metal11 
+[12/06 12:44:38     15s] Via Layer Id 33 is Cont 
+[12/06 12:44:38     15s] Via Layer Id 34 is Via1 
+[12/06 12:44:38     15s] Via Layer Id 35 is Via2 
+[12/06 12:44:38     15s] Via Layer Id 36 is Via3 
+[12/06 12:44:38     15s] Via Layer Id 37 is Via4 
+[12/06 12:44:38     15s] Via Layer Id 38 is Via5 
+[12/06 12:44:38     15s] Via Layer Id 39 is Via6 
+[12/06 12:44:38     15s] Via Layer Id 40 is Via7 
+[12/06 12:44:38     15s] Via Layer Id 41 is Via8 
+[12/06 12:44:38     15s] Via Layer Id 42 is Via9 
+[12/06 12:44:38     15s] Via Layer Id 43 is Via10 
+[12/06 12:44:38     15s] Via Layer Id 44 is Bondpad 
+[12/06 12:44:38     15s] 
+[12/06 12:44:38     15s] Trim Metal Layers:
+[12/06 12:44:38     15s] Generating auto layer map file.
+[12/06 12:44:38     15s]  lef metal Layer Id 1 mapped to tech Id 5 of Layer metal_1 
+[12/06 12:44:38     15s]  lef via Layer Id 1 mapped to tech Id 6 of Layer via_1 
+[12/06 12:44:38     15s]  lef metal Layer Id 2 mapped to tech Id 7 of Layer metal_2 
+[12/06 12:44:38     15s]  lef via Layer Id 2 mapped to tech Id 8 of Layer via_2 
+[12/06 12:44:38     15s]  lef metal Layer Id 3 mapped to tech Id 9 of Layer metal_3 
+[12/06 12:44:38     15s]  lef via Layer Id 3 mapped to tech Id 10 of Layer via_3 
+[12/06 12:44:38     15s]  lef metal Layer Id 4 mapped to tech Id 11 of Layer metal_4 
+[12/06 12:44:38     15s]  lef via Layer Id 4 mapped to tech Id 12 of Layer via_4 
+[12/06 12:44:38     15s]  lef metal Layer Id 5 mapped to tech Id 13 of Layer metal_5 
+[12/06 12:44:38     15s]  lef via Layer Id 5 mapped to tech Id 14 of Layer via_5 
+[12/06 12:44:38     15s]  lef metal Layer Id 6 mapped to tech Id 15 of Layer metal_6 
+[12/06 12:44:38     15s]  lef via Layer Id 6 mapped to tech Id 16 of Layer via_6 
+[12/06 12:44:38     15s]  lef metal Layer Id 7 mapped to tech Id 17 of Layer metal_7 
+[12/06 12:44:38     15s]  lef via Layer Id 7 mapped to tech Id 18 of Layer via_7 
+[12/06 12:44:38     15s]  lef metal Layer Id 8 mapped to tech Id 19 of Layer metal_8 
+[12/06 12:44:38     15s]  lef via Layer Id 8 mapped to tech Id 20 of Layer via_8 
+[12/06 12:44:38     15s]  lef metal Layer Id 9 mapped to tech Id 21 of Layer metal_9 
+[12/06 12:44:38     15s]  lef via Layer Id 9 mapped to tech Id 22 of Layer via_9 
+[12/06 12:44:38     15s]  lef metal Layer Id 10 mapped to tech Id 23 of Layer metal_10 
+[12/06 12:44:38     15s]  lef via Layer Id 10 mapped to tech Id 24 of Layer via_10 
+[12/06 12:44:38     15s]  lef metal Layer Id 11 mapped to tech Id 25 of Layer metal_11 
+[12/06 12:44:38     15s] Metal Layer Id 1 mapped to 5 
+[12/06 12:44:38     15s] Via Layer Id 1 mapped to 6 
+[12/06 12:44:38     15s] Metal Layer Id 2 mapped to 7 
+[12/06 12:44:38     15s] Via Layer Id 2 mapped to 8 
+[12/06 12:44:38     15s] Metal Layer Id 3 mapped to 9 
+[12/06 12:44:38     15s] Via Layer Id 3 mapped to 10 
+[12/06 12:44:38     15s] Metal Layer Id 4 mapped to 11 
+[12/06 12:44:38     15s] Via Layer Id 4 mapped to 12 
+[12/06 12:44:38     15s] Metal Layer Id 5 mapped to 13 
+[12/06 12:44:38     15s] Via Layer Id 5 mapped to 14 
+[12/06 12:44:38     15s] Metal Layer Id 6 mapped to 15 
+[12/06 12:44:38     15s] Via Layer Id 6 mapped to 16 
+[12/06 12:44:38     15s] Metal Layer Id 7 mapped to 17 
+[12/06 12:44:38     15s] Via Layer Id 7 mapped to 18 
+[12/06 12:44:38     15s] Metal Layer Id 8 mapped to 19 
+[12/06 12:44:38     15s] Via Layer Id 8 mapped to 20 
+[12/06 12:44:38     15s] Metal Layer Id 9 mapped to 21 
+[12/06 12:44:38     15s] Via Layer Id 9 mapped to 22 
+[12/06 12:44:38     15s] Metal Layer Id 10 mapped to 23 
+[12/06 12:44:38     15s] Via Layer Id 10 mapped to 24 
+[12/06 12:44:38     15s] Metal Layer Id 11 mapped to 25 
+[12/06 12:44:38     15s] eee: pegPreRouteEnableSaveRestoreRCPatterns:1, retVal:1, doesAnyTechFileNeedExtraction1
+[12/06 12:44:38     15s] eee: Reading patterns meta data.
+[12/06 12:44:38     15s] Restore PreRoute Pattern Extraction data successful in header.
+[12/06 12:44:38     15s] Loading preRoute extracted patterns from file '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/nbit_stack.techData.gz' ...
+[12/06 12:44:38     15s] readViaRC viaRead:119, nrVia:119
+[12/06 12:44:38     15s] isWireRCValid Validate checksum:4711880, FromFile:4711880accessWirePatterns Pattern count:31752, FromFile:31752 Checksum:4711880, FromFile:4711880
+[12/06 12:44:38     15s] eee: PatternAvail:1, PreRoutePatternReadFailed:0
+[12/06 12:44:38     15s] Restore PreRoute Pattern Extraction data successful.
+[12/06 12:44:38     15s] Completed (cpu: 0:00:00.3 real: 0:00:00.0)
+[12/06 12:44:38     15s] Set Shrink Factor to 1.00000
+[12/06 12:44:38     15s] Summary of Active RC-Corners : 
+[12/06 12:44:38     15s]  
+[12/06 12:44:38     15s]  Analysis View: nbit_stack_view_setup
+[12/06 12:44:38     15s]     RC-Corner Name        : nbit_stack_rc_corner
+[12/06 12:44:38     15s]     RC-Corner Index       : 0
+[12/06 12:44:38     15s]     RC-Corner Temperature : 25 Celsius
+[12/06 12:44:38     15s]     RC-Corner Cap Table   : ''
+[12/06 12:44:38     15s]     RC-Corner PreRoute Res Factor         : 1
+[12/06 12:44:38     15s]     RC-Corner PreRoute Cap Factor         : 1
+[12/06 12:44:38     15s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/06 12:44:38     15s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/06 12:44:38     15s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/06 12:44:38     15s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[12/06 12:44:38     15s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[12/06 12:44:38     15s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/06 12:44:38     15s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/06 12:44:38     15s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[12/06 12:44:38     15s]     RC-Corner Technology file: '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/libs/mmmc/nbit_stack_rc_corner/gpdk045.tch'
+[12/06 12:44:38     15s]  
+[12/06 12:44:38     15s]  Analysis View: nbit_stack_view_hold
+[12/06 12:44:38     15s]     RC-Corner Name        : nbit_stack_rc_corner
+[12/06 12:44:38     15s]     RC-Corner Index       : 0
+[12/06 12:44:38     15s]     RC-Corner Temperature : 25 Celsius
+[12/06 12:44:38     15s]     RC-Corner Cap Table   : ''
+[12/06 12:44:38     15s]     RC-Corner PreRoute Res Factor         : 1
+[12/06 12:44:38     15s]     RC-Corner PreRoute Cap Factor         : 1
+[12/06 12:44:38     15s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[12/06 12:44:38     15s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[12/06 12:44:38     15s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[12/06 12:44:38     15s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[12/06 12:44:38     15s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[12/06 12:44:38     15s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[12/06 12:44:38     15s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[12/06 12:44:38     15s]     RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+[12/06 12:44:38     15s]     RC-Corner Technology file: '/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/libs/mmmc/nbit_stack_rc_corner/gpdk045.tch'
+[12/06 12:44:38     15s] 
+[12/06 12:44:38     15s] Trim Metal Layers:
+[12/06 12:44:38     15s] LayerId::1 widthSet size::1
+[12/06 12:44:38     15s] LayerId::2 widthSet size::1
+[12/06 12:44:38     15s] LayerId::3 widthSet size::1
+[12/06 12:44:38     15s] LayerId::4 widthSet size::1
+[12/06 12:44:38     15s] LayerId::5 widthSet size::1
+[12/06 12:44:38     15s] LayerId::6 widthSet size::1
+[12/06 12:44:38     15s] LayerId::7 widthSet size::1
+[12/06 12:44:38     15s] LayerId::8 widthSet size::1
+[12/06 12:44:38     15s] LayerId::9 widthSet size::1
+[12/06 12:44:38     15s] LayerId::10 widthSet size::1
+[12/06 12:44:38     15s] LayerId::11 widthSet size::1
+[12/06 12:44:38     15s] Checksum of RCGrid density data read::(132 132) passed::1
+[12/06 12:44:38     15s] Restore PreRoute RC Grid data successful.
+[12/06 12:44:38     15s] Restored RC grid for preRoute extraction.
+[12/06 12:44:38     15s] eee: pegSigSF::1.070000
+[12/06 12:44:38     15s] Initializing multi-corner resistance tables ...
+[12/06 12:44:38     15s] ReadRoutingBlockageFactor status::1
+[12/06 12:44:38     15s] Restore PreRoute Blockage data successful.
+[12/06 12:44:38     15s] eee: Reading Grid unit RC.
+[12/06 12:44:38     15s] pesRestorePreRouteExtractionData::readRCGridUnitRC called for corner::nbit_stack_rc_corner
+[12/06 12:44:38     15s] RCCorner in design data Name::nbit_stack_rc_corner Tech::/home/shivansa/CUSTOM-CIRCUIT-DESIGN/PROJECT_shivansa/Innovus/nbit_stackprectsnew.enc.dat/libs/mmmc/nbit_stack_rc_corner/gpdk045.tch 25.000000 1.000000 1.000000 
+[12/06 12:44:38     15s] RCCorner in saved data Name::nbit_stack_rc_corner Tech::/opt/eda/cadence/local/GSCLIB045_Fall2024_SymbolwithVDDVSS/lan/flow/t1u1/reference_libs/GPDK045/gsclib045_all_v4.4/gsclib045/qrc/qx/gpdk045.tch 25.000000 1.000000 1.000000 
+[12/06 12:44:38     15s] Unit RC read checksum: 12716, count: 12716, status: 1
+[12/06 12:44:38     15s] Number of RC corner to be extracted::0
+[12/06 12:44:38     15s] eee: l::1 avDens::0.102712 usedTrk::2218.581288 availTrk::21600.000000 sigTrk::2218.581288
+[12/06 12:44:38     15s] eee: l::2 avDens::0.251685 usedTrk::5013.948600 availTrk::19921.500000 sigTrk::5013.948600
+[12/06 12:44:38     15s] eee: l::3 avDens::0.321384 usedTrk::6681.570152 availTrk::20790.000000 sigTrk::6681.570152
+[12/06 12:44:38     15s] eee: l::4 avDens::0.182374 usedTrk::3477.228122 availTrk::19066.500000 sigTrk::3477.228122
+[12/06 12:44:38     15s] eee: l::5 avDens::0.088845 usedTrk::1695.155557 availTrk::19080.000000 sigTrk::1695.155557
+[12/06 12:44:38     15s] eee: l::6 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/06 12:44:38     15s] eee: l::7 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/06 12:44:38     15s] eee: l::8 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/06 12:44:38     15s] eee: l::9 avDens::0.000000 usedTrk::0.000000 availTrk::0.000000 sigTrk::0.000000
+[12/06 12:44:38     15s] eee: l::10 avDens::0.349348 usedTrk::537.646675 availTrk::1539.000000 sigTrk::537.646675
+[12/06 12:44:38     15s] eee: l::11 avDens::0.052257 usedTrk::60.200000 availTrk::1152.000000 sigTrk::60.200000
+[12/06 12:44:38     15s] {RT nbit_stack_rc_corner 0 5 5 0}
+[12/06 12:44:38     15s] eee: LAM: n=40 LLS=2-3 HLS=3-5 rDens=0.300293 uaWl=1.000000 uaWlH=0.306759 aWlH=0.000000 lMod=0 pMax=0.859400 pMod=81 wcR=0.500000 newSi=0.001600 wHLS=1.250000 siPrev=0 viaL=0.000000 crit=0.000000 shortMod=0.000000 fMod=0.000000 
+[12/06 12:44:38     15s] Default value for postRoute extraction mode's effortLevel (-effortLevel option of setExtractRCMode) changed to 'medium'.
+[12/06 12:44:38     15s] Restore PreRoute all RC Grid data successful.Start generating vias ..
+[12/06 12:44:38     15s] #create default rule from bind_ndr_rule rule=0x7f8345964320 0x7f831a8d4568
+[12/06 12:44:38     15s] ### import design signature (1): route=1 fixed_route=1 flt_obj=0 vio=1905142130 swire=1 shield_wire=1 net_attr=1 dirty_area=0 del_dirty_area=0 cell=0 placement=0 pin_access=1 inst_pattern=1 via=610195162 routing_via=1
+[12/06 12:44:38     15s] #Skip building auto via since it is not turned on.
+[12/06 12:44:38     15s] Extracting standard cell pins and blockage ...... 
+[12/06 12:44:38     15s] Pin and blockage extraction finished
+[12/06 12:44:38     15s] Via generation completed.
+[12/06 12:44:38     15s] % Begin Load power constraints ... (date=12/06 12:44:38, mem=1367.6M)
+[12/06 12:44:38     15s] % End Load power constraints ... (date=12/06 12:44:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=1374.7M, current mem=1374.7M)
+[12/06 12:44:38     15s] % Begin load AAE data ... (date=12/06 12:44:38, mem=1397.5M)
+[12/06 12:44:38     15s] AAE DB initialization (MEM=1629.54 CPU=0:00:00.0 REAL=0:00:00.0) 
+[12/06 12:44:38     15s] % End load AAE data ... (date=12/06 12:44:38, total cpu=0:00:00.3, real=0:00:00.0, peak res=1407.6M, current mem=1407.6M)
+[12/06 12:44:38     15s] 
+[12/06 12:44:38     15s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign Begin ...
+[12/06 12:44:38     15s] SBFF Setting to complicate: SMDFFHQX8 complicate code: 30.1
+[12/06 12:44:38     15s] SBFF Setting to complicate: SMDFFHQX4 complicate code: 30.1
+[12/06 12:44:38     15s] SBFF Setting to complicate: SMDFFHQX2 complicate code: 30.1
+[12/06 12:44:38     15s] SBFF Setting to complicate: SMDFFHQX1 complicate code: 30.1
+[12/06 12:44:38     15s] SBFF Setting to complicate: SEDFFTRXL complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: SEDFFTRX4 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: SEDFFTRX2 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: SEDFFTRX1 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: SEDFFHQX8 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: SEDFFHQX4 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: SEDFFHQX2 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: SEDFFHQX1 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: EDFFTRXL complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: EDFFTRX4 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: EDFFTRX2 complicate code: 30.05
+[12/06 12:44:38     15s] SBFF Setting to complicate: EDFFTRX1 complicate code: 30.05
+[12/06 12:44:38     15s] Summary for sequential cells identification: 
+[12/06 12:44:38     15s]   Identified SBFF number: 104
+[12/06 12:44:38     15s]   Identified MBFF number: 0
+[12/06 12:44:38     15s]   Identified SB Latch number: 0
+[12/06 12:44:38     15s]   Identified MB Latch number: 0
+[12/06 12:44:38     15s]   Not identified SBFF number: 16
+[12/06 12:44:38     15s]   Not identified MBFF number: 0
+[12/06 12:44:38     15s]   Not identified SB Latch number: 0
+[12/06 12:44:38     15s]   Not identified MB Latch number: 0
+[12/06 12:44:38     15s]   Number of sequential cells which are not FFs: 32
+[12/06 12:44:38     15s] Total number of combinational cells: 318
+[12/06 12:44:38     15s] Total number of sequential cells: 152
+[12/06 12:44:38     15s] Total number of tristate cells: 10
+[12/06 12:44:38     15s] Total number of level shifter cells: 0
+[12/06 12:44:38     15s] Total number of power gating cells: 0
+[12/06 12:44:38     15s] Total number of isolation cells: 0
+[12/06 12:44:38     15s] Total number of power switch cells: 0
+[12/06 12:44:38     15s] Total number of pulse generator cells: 0
+[12/06 12:44:38     15s] Total number of always on buffers: 0
+[12/06 12:44:38     15s] Total number of retention cells: 0
+[12/06 12:44:38     15s] Total number of physical cells: 9
+[12/06 12:44:38     15s] List of usable buffers:
+[12/06 12:44:38     15s] Total number of usable buffers: 0
+[12/06 12:44:38     15s] List of unusable buffers: BUFX2 BUFX12 BUFX16 BUFX20 CLKBUFX2 BUFX3 BUFX4 BUFX6 BUFX8 CLKBUFX12 CLKBUFX16 CLKBUFX20 CLKBUFX3 CLKBUFX4 CLKBUFX6 CLKBUFX8 DLY1X1 DLY1X4 DLY2X1 DLY2X4 DLY3X1 DLY3X4 DLY4X1 DLY4X4
+[12/06 12:44:38     15s] Total number of unusable buffers: 24
+[12/06 12:44:38     15s] List of usable inverters: INVX1
+[12/06 12:44:38     15s] Total number of usable inverters: 1
+[12/06 12:44:38     15s] List of unusable inverters: CLKINVX1 CLKINVX2 CLKINVX12 CLKINVX16 CLKINVX20 CLKINVX4 CLKINVX3 CLKINVX6 CLKINVX8 INVX2 INVX12 INVX16 INVX20 INVXL INVX3 INVX4 INVX6 INVX8
+[12/06 12:44:38     15s] Total number of unusable inverters: 18
+[12/06 12:44:38     15s] List of identified usable delay cells:
+[12/06 12:44:38     15s] Total number of identified usable delay cells: 0
+[12/06 12:44:38     15s] List of identified unusable delay cells:
+[12/06 12:44:38     15s] Total number of identified unusable delay cells: 0
+[12/06 12:44:38     15s] 
+[12/06 12:44:38     15s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) in restoreDesign End ...
+[12/06 12:44:38     15s] No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+[12/06 12:44:38     15s] 
+[12/06 12:44:38     15s] TimeStamp Deleting Cell Server Begin ...
+[12/06 12:44:38     15s] 
+[12/06 12:44:38     15s] TimeStamp Deleting Cell Server End ...
+[12/06 12:44:38     15s] **WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+[12/06 12:44:38     15s] timing_enable_separate_device_slew_effect_sensitivities
+[12/06 12:44:38     15s] #% End load design ... (date=12/06 12:44:38, total cpu=0:00:02.2, real=0:00:02.0, peak res=1428.6M, current mem=1406.8M)
+[12/06 12:44:38     15s] 
+[12/06 12:44:38     15s] *** Summary of all messages that are not suppressed in this session:
+[12/06 12:44:38     15s] Severity  ID               Count  Summary                                  
+[12/06 12:44:38     15s] WARNING   IMPLF-58            16  MACRO '%s' has been found in the databas...
+[12/06 12:44:38     15s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[12/06 12:44:38     15s] WARNING   IMPLF-200            5  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/06 12:44:38     15s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[12/06 12:44:38     15s] WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
+[12/06 12:44:38     15s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[12/06 12:44:38     15s] WARNING   NRIF-91              1  Option setNanoRouteMode -routeTopRouting...
+[12/06 12:44:38     15s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[12/06 12:44:38     15s] WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
+[12/06 12:44:38     15s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[12/06 12:44:38     15s] *** Message Summary: 41 warning(s), 0 error(s)
+[12/06 12:44:38     15s] 
+[12/06 12:44:38     15s] <CMD> setDrawView fplan
+[12/06 12:44:38     15s] <CMD> encMessage warning 1
+[12/06 12:44:38     15s] <CMD> encMessage debug 0
+[12/06 12:44:59     17s] 
+[12/06 12:44:59     17s] *** Memory Usage v#1 (Current mem = 1763.992M, initial mem = 486.375M) ***
+[12/06 12:44:59     17s] 
+[12/06 12:44:59     17s] *** Summary of all messages that are not suppressed in this session:
+[12/06 12:44:59     17s] Severity  ID               Count  Summary                                  
+[12/06 12:44:59     17s] WARNING   IMPLF-58            16  MACRO '%s' has been found in the databas...
+[12/06 12:44:59     17s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[12/06 12:44:59     17s] WARNING   IMPLF-200            5  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[12/06 12:44:59     17s] WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+[12/06 12:44:59     17s] WARNING   IMPPTN-867           1  Found use of %s. This will continue to w...
+[12/06 12:44:59     17s] WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+[12/06 12:44:59     17s] WARNING   NRIF-91              1  Option setNanoRouteMode -routeTopRouting...
+[12/06 12:44:59     17s] WARNING   IMPCTE-107           1  The following globals have been obsolete...
+[12/06 12:44:59     17s] WARNING   IMPPSP-1003          1  Found use of '%s'. This will continue to...
+[12/06 12:44:59     17s] WARNING   TECHLIB-302         10  No function defined for cell '%s'. The c...
+[12/06 12:44:59     17s] *** Message Summary: 41 warning(s), 0 error(s)
+[12/06 12:44:59     17s] 
+[12/06 12:44:59     17s] --- Ending "Innovus" (totcpu=0:00:17.1, real=0:01:35, mem=1764.0M) ---

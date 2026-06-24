@@ -1,0 +1,224 @@
+VERIFY_CONNECTIVITY use new engine.
+
+******** Start: VERIFY CONNECTIVITY ********
+Start Time: Fri Dec  6 12:55:37 2024
+
+Design Name: nbit_stack
+Database Units: 2000
+Design Boundary: (0.0000, 0.0000) (257.0000, 257.4500)
+Error Limit = 1000; Warning Limit = 50
+Check all nets
+Net FE_OCPN28774_n_2410: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28773_n_2410: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28772_n_2410: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28771_n_2410: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28770_n_2410: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28769_n_2410: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28768_n_1204: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28767_n_1204: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28766_n_1204: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28765_n_1204: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28764_n_2386: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28763_n_2386: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28762_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28761_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28760_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28759_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28758_FE_OFN833_n_660: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28757_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28756_FE_RN_1092: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28755_FE_RN_1092: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28754_FE_OFN1530_n_593: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28753_FE_OFN1530_n_593: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28752_FE_OFN1530_n_593: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28751_FE_OFN1530_n_593: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28750_FE_OFN1395_n_733: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28749_FE_OFN1395_n_733: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28746_FE_OFN913_n_661: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28745_FE_OFN793_n_731: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28744_FE_OFN793_n_731: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28739_FE_OFN1515_n_584: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28738_FE_OFN1515_n_584: has an unconnected terminal, has regular routing with opens.
+Net FE_RN_6841_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28737_n_1878: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28736_n_1878: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28735_n_1878: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28734_n_1878: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28733_FE_RN_1625: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28732_n_2146: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28731_n_2146: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28730_n_2146: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28729_n_1106: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28728_n_1106: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28727_n_1106: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28726_n_1416: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28725_n_1416: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28724_n_1416: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28723_n_591: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28722_n_591: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28719_n_591: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28717_n_591: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28715_n_2418: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_219: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_192: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28713_n_1296: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28712_n_1296: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28710_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28709_n_745: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28707_n_745: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28706_n_745: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28705_n_745: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28704_n_745: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28703_n_745: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28701_n_745: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28699_n_660: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28698_n_660: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28697_FE_OFN2057_n_675: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_184: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_115: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28696_FE_RN_6112_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28695_FE_RN_6112_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28694_FE_RN_6112_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6840_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28693_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28692_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28691_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28690_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28689_n_744: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28688_n_744: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28687_n_744: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28684_FE_OFN1760_n_738: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6839_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28682_n_1758: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28681_n_1758: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28680_n_1294: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28679_n_1294: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_161: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28678_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28677_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6838_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28676_FE_RN_1349: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28675_FE_OFN1411_n_728: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28674_FE_OFN1411_n_728: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28672_FE_OFN1411_n_728: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_152: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28671_FE_OFN1141_n_668: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28670_FE_OFN1141_n_668: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_137: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28666_FE_OFN986_n_586: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6837_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6836_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28664_n_2302: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28663_n_2302: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28662_n_2302: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28661_n_1384: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28660_n_1384: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28659_n_1384: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28658_n_1440: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28657_n_1440: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28656_n_2372: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28655_n_2372: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28654_n_2314: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28653_n_2314: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_130: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6835_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28652_FE_OFN1900_n_680: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28651_FE_OFN1900_n_680: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28650_FE_OFN1900_n_680: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28649_FE_OFN1617_n_741: has an unconnected terminal, has regular routing with opens.
+Net FE_OCPN28648_FE_OFN1617_n_741: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_94: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28647_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28646_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28643_FE_OFN1470_n_732: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28642_FE_OFN1470_n_732: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_91: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28638_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28637_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28636_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28634_FE_OFN932_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28633_FE_OFN932_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28632_FE_OFN932_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28631_FE_OFN932_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28630_FE_OFN932_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28629_FE_OFN932_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28628_FE_OFN932_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28627_FE_OFN932_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28626_FE_OFN1637_n_673: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28624_FE_OFN1637_n_673: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28622_FE_OFN836_n_660: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28621_FE_OFN836_n_660: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28620_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28619_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28618_n: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28617_FE_OFN1234_n_730: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28616_FE_OFN1234_n_730: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28615_FE_OFN935_n_658: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28614_FE_RN_1240: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28613_FE_RN_1240: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_89: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28612_n_587: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28611_n_726: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_OCPN28610_n_586: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6834_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6833_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6832_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6831_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6830_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6829_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6826_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6825_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6824_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6823_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6822_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6821_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6820_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6819_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6818_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6817_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6816_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6815_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6814_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6813_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6812_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6811_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6810_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6809_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6808_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6807_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6806_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6805_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6804_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6803_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6802_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6801_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6800_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6799_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6798_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6797_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6796_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6795_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6794_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6793_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6790_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6789_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6788_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6787_0: has an unconnected terminal, has regular routing with opens, dangling Wire.
+Net FE_RN_6786_0: has an unconnected terminal.
+**WARN: (IMPVFC-3):	Verify Connectivity stopped: Number of errors exceeds the limit 1000
+Type 'man IMPVFC-3' for more detail.
+
+Begin Summary 
+    417 Problem(s) (IMPVFC-96): Terminal(s) are not connected.
+    196 Problem(s) (IMPVFC-92): Pieces of the net are not connected together.
+    387 Problem(s) (IMPVFC-94): The net has dangling wire(s).
+    1000 total info(s) created.
+End Summary
+
+End Time: Fri Dec  6 12:55:38 2024
+Time Elapsed: 0:00:01.0
+
+******** End: VERIFY CONNECTIVITY ********
+  Verification Complete : 1000 Viols.  0 Wrngs.
+  (CPU Time: 0:00:00.0  MEM: 0.000M)
+

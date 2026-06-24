@@ -1,0 +1,29 @@
+#-check_same_via_cell true               # bool, default=false, user setting
+ *** Starting Verify DRC (MEM: 3338.9) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+  VERIFY DRC ...... Sub-Area: {0.000 0.000 86.400 86.400} 1 of 9
+  VERIFY DRC ...... Sub-Area : 1 complete 997 Viols.
+  VERIFY DRC ...... Sub-Area: {86.400 0.000 172.800 86.400} 2 of 9
+**WARN: (IMPVFG-1103):	VERIFY DRC did not complete: Number of violations exceeds the Error Limit [1000]
+
+  Verification Complete : 1000 Viols.
+
+**WARN: (IMPTCM-70):	Option "-droute_vio_display_type_num" for command getNanoRouteMode is obsolete and has been replaced by "-drouteVioDisplayTypeNum". The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use "-drouteVioDisplayTypeNum".
+ Violation Summary By Layer and Type:
+
+	            Mar   OffGrd outOfDie   AdjCut   Totals
+	Metal1      960        8        5        0      973
+	Via1          0        0        0        1        1
+	Metal2        0        5        9        0       14
+	Metal3        0        3        1        0        4
+	Metal4        0        3        1        0        4
+	Metal5        0        3        1        0        4
+	Totals      960       22       17        1     1000
+
+ *** End Verify DRC (CPU: 0:00:00.8  ELAPSED TIME: 0.00  MEM: 0.0M) ***
+
